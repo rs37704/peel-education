@@ -587,181 +587,192 @@ if (cf) {
 }
 </script>
 
+
+
 <!-- ═══ FLOATING AI CHATBOT ═══ -->
 <div id="chat-widget" style="position:fixed;bottom:24px;right:24px;z-index:9999;font-family:'DM Sans',sans-serif">
 
   <!-- Chat Window -->
-  <div id="chat-window" style="display:none;width:340px;height:480px;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);overflow:hidden;flex-direction:column;border:1px solid #e8eef5;margin-bottom:12px">
+  <div id="chat-window" style="display:none;width:340px;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);overflow:hidden;flex-direction:column;border:1px solid #e8eef5;margin-bottom:12px">
     
-    <!-- Chat Header -->
+    <!-- Header -->
     <div style="background:linear-gradient(135deg,#1b3a6b,#0d2144);padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:.7rem">
-        <div style="width:38px;height:38px;border-radius:50%;background:rgba(201,146,42,.25);border:2px solid #e8b84b;display:flex;align-items:center;justify-content:center;font-size:1.1rem">&#129302;</div>
+        <div style="width:38px;height:38px;border-radius:50%;background:rgba(201,146,42,.25);border:2px solid #e8b84b;display:flex;align-items:center;justify-content:center;font-size:1.1rem">🤖</div>
         <div>
           <div style="color:#fff;font-weight:700;font-size:.92rem">Peel Education AI</div>
-          <div style="color:#a8c0d8;font-size:.72rem;display:flex;align-items:center;gap:.3rem"><span style="width:7px;height:7px;background:#4caf50;border-radius:50%;display:inline-block"></span>Online &bull; Available 24/7</div>
+          <div style="color:#a8c0d8;font-size:.72rem;display:flex;align-items:center;gap:.3rem">
+            <span style="width:7px;height:7px;background:#4caf50;border-radius:50%;display:inline-block"></span>
+            Online &bull; Available 24/7
+          </div>
         </div>
       </div>
-      <button onclick="toggleChat()" style="background:rgba(255,255,255,.1);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center">&#10005;</button>
+      <button onclick="toggleChat()" style="background:rgba(255,255,255,.1);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1rem;line-height:1;display:flex;align-items:center;justify-content:center">&times;</button>
     </div>
 
     <!-- Messages -->
-    <div id="widget-messages" style="flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.8rem;background:#f8f9fb;height:330px">
+    <div id="widget-messages" style="height:300px;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.8rem;background:#f8f9fb">
       <div style="display:flex;gap:.5rem;align-items:flex-start">
-        <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#c9922a,#e8b84b);display:flex;align-items:center;justify-content:center;font-size:.75rem;flex-shrink:0">&#129302;</div>
-        <div style="background:#fff;border:1px solid #e8eef5;border-radius:14px;border-bottom-left-radius:4px;padding:.7rem .9rem;font-size:.85rem;color:#0d1a2e;line-height:1.55;max-width:85%;box-shadow:0 1px 4px rgba(0,0,0,.06)">
-          Hi! I'm Peel Education's AI counsellor &#128075;<br/><br/>Ask me anything about college admissions, PSW, ECEA, Pharmacy Assistant, or career guidance in Canada!
+        <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#c9922a,#e8b84b);display:flex;align-items:center;justify-content:center;font-size:.75rem;flex-shrink:0;color:#fff;font-weight:700">AI</div>
+        <div style="background:#fff;border:1px solid #e8eef5;border-radius:14px;border-bottom-left-radius:4px;padding:.7rem .9rem;font-size:.85rem;color:#0d1a2e;line-height:1.6;max-width:85%;box-shadow:0 1px 4px rgba(0,0,0,.05)">
+          Hi! 👋 I am Peel Education's AI counsellor.<br/><br/>Ask me anything about PSW, ECEA, Pharmacy Assistant, College Admissions or Career Guidance in Canada!
         </div>
       </div>
     </div>
 
-    <!-- Quick Questions -->
+    <!-- Quick Buttons -->
     <div style="padding:.6rem 1rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;gap:.4rem;flex-wrap:wrap">
-      <button class="wquick" data-q="What programs do you offer?">Programs?</button>
-      <button class="wquick" data-q="How to apply for PSW?">PSW?</button>
-      <button class="wquick" data-q="Is consultation free?">Free consult?</button>
-      <button class="wquick" data-q="What are eligibility requirements?">Eligibility?</button>
+      <button onclick="askWidget('What programs do you offer?')" style="background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.28rem .65rem;border-radius:50px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">Programs?</button>
+      <button onclick="askWidget('How to apply for PSW program?')" style="background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.28rem .65rem;border-radius:50px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">PSW?</button>
+      <button onclick="askWidget('Is the consultation free?')" style="background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.28rem .65rem;border-radius:50px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">Free?</button>
+      <button onclick="askWidget('What are the eligibility requirements?')" style="background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.28rem .65rem;border-radius:50px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">Eligibility?</button>
     </div>
 
     <!-- Input -->
-    <div style="padding:.7rem 1rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;gap:.6rem">
-      <input id="widget-input" type="text" placeholder="Type your question..." style="flex:1;border:1.5px solid #e0e8f0;border-radius:50px;padding:.55rem .95rem;font-size:.85rem;outline:none;font-family:'DM Sans',sans-serif;color:#0d1a2e;background:#f8f9fb" onfocus="this.style.borderColor='#c9922a'" onblur="this.style.borderColor='#e0e8f0'"/>
-      <button onclick="sendWidgetChat()" id="widget-send" style="background:#c9922a;color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;flex-shrink:0;transition:background .2s" onmouseover="this.style.background='#e8b84b'" onmouseout="this.style.background='#c9922a'">&#10148;</button>
+    <div style="padding:.7rem 1rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;gap:.6rem;align-items:center">
+      <input id="widget-input" type="text" placeholder="Type your question..." 
+        style="flex:1;border:1.5px solid #e0e8f0;border-radius:50px;padding:.55rem .95rem;font-size:.85rem;outline:none;font-family:'DM Sans',sans-serif;color:#0d1a2e;background:#f8f9fb"/>
+      <button id="widget-send-btn" onclick="sendWidgetMsg()" 
+        style="background:#c9922a;color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1.1rem;flex-shrink:0;display:flex;align-items:center;justify-content:center">&#10148;</button>
     </div>
   </div>
 
   <!-- Toggle Button -->
-  <button onclick="toggleChat()" id="chat-toggle-btn" style="width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#1b3a6b,#0d2144);border:3px solid #c9922a;color:#fff;font-size:1.5rem;cursor:pointer;box-shadow:0 6px 24px rgba(27,58,107,.4);transition:all .3s;display:flex;align-items:center;justify-content:center;margin-left:auto" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
-    <span id="chat-icon">&#129302;</span>
+  <button onclick="toggleChat()" id="chat-toggle-btn" 
+    style="width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#1b3a6b,#0d2144);border:3px solid #c9922a;color:#fff;font-size:1.6rem;cursor:pointer;box-shadow:0 6px 24px rgba(27,58,107,.4);display:flex;align-items:center;justify-content:center;margin-left:auto;transition:transform .2s">
+    🤖
   </button>
 
-  <!-- Notification dot -->
-  <div id="chat-notif" style="position:absolute;top:-2px;right:-2px;width:16px;height:16px;background:#e8b84b;border-radius:50%;border:2px solid #fff;animation:pulse-dot 2s infinite"></div>
+  <!-- Pulse dot -->
+  <div id="chat-dot" style="display:none;position:absolute;top:-2px;right:-2px;width:16px;height:16px;background:#e8b84b;border-radius:50%;border:2px solid #fff"></div>
 </div>
 
 <style>
 #widget-messages::-webkit-scrollbar{width:3px}
 #widget-messages::-webkit-scrollbar-thumb{background:#c9922a;border-radius:2px}
-.wmsg-bot{display:flex;gap:.5rem;align-items:flex-start}
-.wmsg-bot-bubble{background:#fff;border:1px solid #e8eef5;border-radius:14px;border-bottom-left-radius:4px;padding:.7rem .9rem;font-size:.85rem;color:#0d1a2e;line-height:1.55;max-width:85%;box-shadow:0 1px 4px rgba(0,0,0,.06)}
-.wmsg-bot-avatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#c9922a,#e8b84b);display:flex;align-items:center;justify-content:center;font-size:.75rem;flex-shrink:0}
-.wmsg-user{display:flex;justify-content:flex-end}
-.wmsg-user-bubble{background:linear-gradient(135deg,#1b3a6b,#0d2144);color:#fff;border-radius:14px;border-bottom-right-radius:4px;padding:.7rem .9rem;font-size:.85rem;line-height:1.55;max-width:85%}
-.wquick{background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.28rem .65rem;border-radius:50px;font-size:.72rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
-.wquick:hover{background:#c9922a;color:#fff;border-color:#c9922a}
-.wtyping{display:flex;gap:.5rem;align-items:flex-start}
-.wtyping-bubble{background:#fff;border:1px solid #e8eef5;border-radius:14px;border-bottom-left-radius:4px;padding:.7rem .9rem}
-.wtyping-dots span{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c9922a;margin:0 2px;animation:wbounce .8s infinite}
-.wtyping-dots span:nth-child(2){animation-delay:.15s}
-.wtyping-dots span:nth-child(3){animation-delay:.3s}
+#chat-window.open{display:flex!important;flex-direction:column!important}
 @keyframes wbounce{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-5px)}}
-@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
-#chat-window{display:none}
-#chat-window.open{display:flex!important;flex-direction:column}
+.wdot span{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c9922a;margin:0 2px;animation:wbounce .8s infinite}
+.wdot span:nth-child(2){animation-delay:.15s}
+.wdot span:nth-child(3){animation-delay:.3s}
 @media(max-width:480px){
-  #chat-widget{bottom:16px;right:16px}
-  #chat-window{width:calc(100vw - 32px)!important;height:440px!important}
+  #chat-widget{bottom:14px;right:14px}
+  #chat-window{width:calc(100vw - 28px)!important}
 }
 </style>
 
 <script>
-var widgetOpen = false;
-var widgetHistory = [];
-var WSYSTEM = 'You are a friendly AI counsellor for Peel Education, a Canadian education consultancy. Services: College Admissions, PSW, ECEA, Pharmacy Assistant, Short-Term Courses, Career Counselling. Phone: 437-992-4377. Email: peeledu@yahoo.com. Hours: Mon-Fri 9am-5pm EST. Keep answers warm, helpful, concise (2-3 sentences max). Always end by suggesting they book a free consultation or call 437-992-4377.';
+(function(){
+  var isOpen = false;
+  var history = [];
+  var SYSTEM = 'You are a helpful, friendly AI counsellor for Peel Education, a Canadian education consultancy. Services offered: College Admissions, PSW (Personal Support Worker), ECEA (Early Childhood Educator Assistant), Pharmacy Assistant, Short-Term Courses, Career Counselling. Pay rates: $19-$35/hr. Phone: 437-992-4377. Email: peeledu@yahoo.com. Hours: Mon-Fri 9am-5pm EST. Keep answers warm, concise (2-3 sentences). Always suggest booking a free consultation by calling 437-992-4377 or emailing peeledu@yahoo.com.';
 
-function toggleChat() {
-  widgetOpen = !widgetOpen;
-  var win = document.getElementById('chat-window');
-  var icon = document.getElementById('chat-icon');
-  var notif = document.getElementById('chat-notif');
-  if (widgetOpen) {
-    win.classList.add('open');
-    icon.innerHTML = '&#10005;';
-    notif.style.display = 'none';
-    document.getElementById('widget-input').focus();
-  } else {
-    win.classList.remove('open');
-    icon.innerHTML = '&#129302;';
+  window.toggleChat = function() {
+    isOpen = !isOpen;
+    var win = document.getElementById('chat-window');
+    var dot = document.getElementById('chat-dot');
+    if (isOpen) {
+      win.classList.add('open');
+      dot.style.display = 'none';
+      setTimeout(function(){ document.getElementById('widget-input').focus(); }, 100);
+    } else {
+      win.classList.remove('open');
+    }
+  };
+
+  function addMsg(text, type) {
+    var box = document.getElementById('widget-messages');
+    var wrap = document.createElement('div');
+    if (type === 'user') {
+      wrap.style.cssText = 'display:flex;justify-content:flex-end';
+      wrap.innerHTML = '<div style="background:linear-gradient(135deg,#1b3a6b,#0d2144);color:#fff;border-radius:14px;border-bottom-right-radius:4px;padding:.7rem .9rem;font-size:.85rem;line-height:1.6;max-width:85%">' + text + '</div>';
+    } else {
+      wrap.style.cssText = 'display:flex;gap:.5rem;align-items:flex-start';
+      wrap.innerHTML = '<div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#c9922a,#e8b84b);display:flex;align-items:center;justify-content:center;font-size:.72rem;flex-shrink:0;color:#fff;font-weight:700">AI</div><div style="background:#fff;border:1px solid #e8eef5;border-radius:14px;border-bottom-left-radius:4px;padding:.7rem .9rem;font-size:.85rem;color:#0d1a2e;line-height:1.6;max-width:85%;box-shadow:0 1px 4px rgba(0,0,0,.05)">' + text.replace(/
+/g,'<br>') + '</div>';
+    }
+    box.appendChild(wrap);
+    box.scrollTop = box.scrollHeight;
   }
-}
 
-function addWidgetMsg(text, type) {
-  var box = document.getElementById('widget-messages');
-  var div = document.createElement('div');
-  if (type === 'bot') {
-    div.className = 'wmsg-bot';
-    div.innerHTML = '<div class="wmsg-bot-avatar">&#129302;</div><div class="wmsg-bot-bubble">' + text.replace(/
-/g,'<br/>') + '</div>';
-  } else {
-    div.className = 'wmsg-user';
-    div.innerHTML = '<div class="wmsg-user-bubble">' + text + '</div>';
+  function showTyping() {
+    var box = document.getElementById('widget-messages');
+    var wrap = document.createElement('div');
+    wrap.id = 'wtyping';
+    wrap.style.cssText = 'display:flex;gap:.5rem;align-items:flex-start';
+    wrap.innerHTML = '<div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#c9922a,#e8b84b);display:flex;align-items:center;justify-content:center;font-size:.72rem;flex-shrink:0;color:#fff;font-weight:700">AI</div><div style="background:#fff;border:1px solid #e8eef5;border-radius:14px;border-bottom-left-radius:4px;padding:.7rem .9rem;box-shadow:0 1px 4px rgba(0,0,0,.05)"><div class="wdot"><span></span><span></span><span></span></div></div>';
+    box.appendChild(wrap);
+    box.scrollTop = box.scrollHeight;
   }
-  box.appendChild(div);
-  box.scrollTop = box.scrollHeight;
-}
 
-function showWidgetTyping() {
-  var box = document.getElementById('widget-messages');
-  var div = document.createElement('div');
-  div.className = 'wtyping'; div.id = 'wtyping';
-  div.innerHTML = '<div class="wmsg-bot-avatar">&#129302;</div><div class="wtyping-bubble"><div class="wtyping-dots"><span></span><span></span><span></span></div></div>';
-  box.appendChild(div); box.scrollTop = box.scrollHeight;
-}
+  function removeTyping() {
+    var t = document.getElementById('wtyping');
+    if (t) t.remove();
+  }
 
-function removeWidgetTyping() {
-  var t = document.getElementById('wtyping');
-  if (t && t.parentNode) t.parentNode.removeChild(t);
-}
+  function callAPI(msg) {
+    history.push({role:'user', content: msg});
+    return fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 300,
+        system: SYSTEM,
+        messages: history
+      })
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var reply = (data.content && data.content[0]) ? data.content[0].text : 'Please call 437-992-4377 for help!';
+      history.push({role:'assistant', content: reply});
+      return reply;
+    });
+  }
 
-function sendWidgetChat() {
-  var input = document.getElementById('widget-input');
-  var btn = document.getElementById('widget-send');
-  var text = input.value.trim();
-  if (!text || btn.disabled) return;
-  input.value = ''; btn.disabled = true;
-  addWidgetMsg(text, 'user');
-  showWidgetTyping();
-  widgetHistory.push({ role: 'user', content: text });
-  fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: 300, system: WSYSTEM, messages: widgetHistory })
-  })
-  .then(function(r){ return r.json(); })
-  .then(function(data){
-    removeWidgetTyping();
-    var reply = data.content && data.content[0] ? data.content[0].text : 'Please call 437-992-4377 for help!';
-    widgetHistory.push({ role: 'assistant', content: reply });
-    addWidgetMsg(reply, 'bot');
-    btn.disabled = false;
-    input.focus();
-  })
-  .catch(function(){
-    removeWidgetTyping();
-    addWidgetMsg('Please call us at 437-992-4377 or email peeledu@yahoo.com — we are happy to help!', 'bot');
-    btn.disabled = false;
+  window.sendWidgetMsg = function() {
+    var input = document.getElementById('widget-input');
+    var btn = document.getElementById('widget-send-btn');
+    var text = input.value.trim();
+    if (!text || btn.disabled) return;
+    input.value = '';
+    btn.disabled = true;
+    addMsg(text, 'user');
+    showTyping();
+    callAPI(text)
+      .then(function(reply){
+        removeTyping();
+        addMsg(reply, 'bot');
+        btn.disabled = false;
+        input.focus();
+      })
+      .catch(function(){
+        removeTyping();
+        addMsg('For immediate help, please call 437-992-4377 or email peeledu@yahoo.com. We are happy to assist!', 'bot');
+        btn.disabled = false;
+      });
+  };
+
+  window.askWidget = function(q) {
+    if (!isOpen) toggleChat();
+    setTimeout(function(){
+      document.getElementById('widget-input').value = q;
+      sendWidgetMsg();
+    }, 300);
+  };
+
+  document.getElementById('widget-input').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') sendWidgetMsg();
   });
-}
 
-document.getElementById('widget-input').addEventListener('keydown', function(e){
-  if (e.key === 'Enter') sendWidgetChat();
-});
-
-document.querySelectorAll('.wquick').forEach(function(b){
-  b.addEventListener('click', function(){
-    document.getElementById('widget-input').value = this.getAttribute('data-q');
-    if (!widgetOpen) toggleChat();
-    sendWidgetChat();
-  });
-});
-
-// Show notification bubble after 3 seconds
-setTimeout(function(){
-  if (!widgetOpen) {
-    var notif = document.getElementById('chat-notif');
-    if (notif) notif.style.display = 'block';
-  }
-}, 3000);
+  // Show dot after 4 seconds
+  setTimeout(function(){
+    if (!isOpen) document.getElementById('chat-dot').style.display = 'block';
+  }, 4000);
+})();
 </script>
 
 </body>
