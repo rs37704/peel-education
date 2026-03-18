@@ -174,6 +174,129 @@ footer{background:#080e1a;border-top:1px solid rgba(201,146,42,.15);padding:3rem
   .gallery-item:first-child{grid-column:span 1}
   .top-contacts{flex-direction:column;gap:.3rem}
 }
+
+/* ═══ MOBILE FIXES ═══ */
+
+/* Hero section mobile */
+@media(max-width:768px){
+  /* Nav */
+  .top-bar{display:none}
+  .nav-main{padding:.7rem 4%}
+  .logo-img{height:38px}
+
+  /* Hero grids → single column */
+  section[style*="grid-template-columns:1.1fr"]{display:block!important}
+  section[style*="grid-template-columns:1.1fr"] > div{margin-bottom:2rem}
+  div[style*="grid-template-columns:1.1fr"]{display:block!important}
+  div[style*="grid-template-columns:1.1fr"] > div{margin-bottom:2rem}
+  div[style*="grid-template-columns:1fr 1fr"]{display:block!important}
+  div[style*="grid-template-columns:1fr 1fr"] > div,
+  div[style*="grid-template-columns:1fr 1fr"] > img{width:100%!important;margin-bottom:1.5rem}
+  div[style*="grid-template-columns:1fr 1.4fr"]{display:block!important}
+  div[style*="grid-template-columns:1fr 1.4fr"] > div{margin-bottom:1.5rem}
+  div[style*="grid-template-columns:1fr 1.2fr"]{display:block!important}
+  div[style*="grid-template-columns:1fr 1.2fr"] > div{margin-bottom:1.5rem}
+  div[style*="grid-template-columns:1.4fr 1fr"]{display:block!important}
+  div[style*="grid-template-columns:1.4fr 1fr"] > div{margin-bottom:1.5rem}
+
+  /* Hero text */
+  #hero, section[style*="min-height:92vh"]{padding:5rem 5% 3rem!important}
+  h1{font-size:2.2rem!important}
+
+  /* Stats */
+  .stats-row{flex-direction:column!important}
+  .stat-item{border-right:none!important;border-bottom:1px solid rgba(255,255,255,.1)!important;padding:1.2rem!important}
+
+  /* Cards grid */
+  .cards-grid{grid-template-columns:1fr!important}
+
+  /* Gallery */
+  .gallery-grid{grid-template-columns:1fr!important}
+  .gallery-item:first-child{grid-column:span 1!important;aspect-ratio:16/9!important}
+
+  /* Testimonials */
+  .testi-grid{grid-template-columns:1fr!important}
+
+  /* Services detail grids */
+  div[style*="grid-template-columns:1fr 1fr"][id]{display:block!important}
+  div[style*="grid-template-columns:1fr 1fr"][id] img{width:100%!important;margin-bottom:1.5rem!important;order:-1}
+
+  /* Programs grid */
+  div[id="psw"], div[id="ecea"], div[id="pharmacy"]{display:block!important}
+  div[id="psw"] img, div[id="ecea"] img, div[id="pharmacy"] img{width:100%!important;margin-bottom:1.5rem!important}
+
+  /* Blog grid */
+  div[style*="grid-template-columns:1.4fr 1fr"]{display:block!important}
+
+  /* Contact grid */
+  div[style*="grid-template-columns:1fr 1.4fr"]{display:block!important}
+
+  /* Footer */
+  .footer-top{flex-direction:column!important}
+  .footer-brand{max-width:100%!important}
+
+  /* Buttons */
+  .hero-btns, div[style*="display:flex;gap:1rem;flex-wrap:wrap"]{flex-direction:column!important;align-items:flex-start!important}
+  .btn-primary,.btn-white,.btn-outline{width:100%!important;text-align:center!important;display:block!important}
+
+  /* Page hero */
+  .page-hero{padding:4rem 5% 3rem!important}
+  .page-hero h1{font-size:2rem!important}
+
+  /* Stats grid in about */
+  div[style*="display:flex;gap:1.5rem;flex-wrap:wrap"]{flex-direction:column!important}
+
+  /* Section padding */
+  .section{padding:3rem 5%!important}
+
+  /* Form */
+  .form-row{grid-template-columns:1fr!important}
+  .contact-form-wrap{padding:1.5rem!important}
+
+  /* Chat box on mobile */
+  .chat-box{border-radius:14px!important}
+  .chat-messages{height:220px!important}
+
+  /* Images full width */
+  img[style*="border-radius:20px"], img[style*="border-radius:18px"], img[style*="border-radius:14px"]{width:100%!important;margin-bottom:1.5rem!important}
+
+  /* Program info grids */
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:.8rem"]{grid-template-columns:1fr 1fr!important}
+
+  /* Quick links in hero */
+  div[style*="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem"]{flex-direction:column}
+
+  /* About stats row */
+  div[style*="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.8rem"]{flex-wrap:wrap!important;gap:1rem!important}
+  div[style*="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.8rem"] > div{flex:1;min-width:120px}
+
+  /* Top social hide */
+  .top-social{display:none}
+
+  /* Breadcrumb */
+  .breadcrumb{flex-wrap:wrap;justify-content:center}
+
+  /* Blog sidebar stacks under articles */
+  div[style*="grid-template-columns:1.4fr 1fr"]{display:flex!important;flex-direction:column!important}
+
+  /* CTA buttons center */
+  div[style*="display:flex;gap:1rem;justify-content:center"]{flex-direction:column!important;align-items:center!important}
+  div[style*="display:flex;gap:1rem;justify-content:center"] .btn-primary,
+  div[style*="display:flex;gap:1rem;justify-content:center"] .btn-white{width:auto!important;min-width:220px}
+}
+
+@media(max-width:480px){
+  h1{font-size:1.9rem!important}
+  .page-hero h1{font-size:1.7rem!important}
+  .section-title{font-size:1.5rem!important}
+  .nav-main{padding:.6rem 4%}
+  .logo-img{height:34px}
+  div[style*="font-size:1.25rem"]{font-size:1.1rem!important}
+  .hero-stats{padding:.9rem 1.2rem!important;gap:1.2rem!important}
+  .stat-num{font-size:1.6rem!important}
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:.8rem"]{grid-template-columns:1fr!important}
+}
+
 </style>
 </head>
 <body>
@@ -228,9 +351,9 @@ footer{background:#080e1a;border-top:1px solid rgba(201,146,42,.15);padding:3rem
       <div class="section-tag">Our Story</div>
       <h2 class="section-title">Founded on Honesty &amp; Real Results</h2>
       <p style="color:#5a6a7a;font-size:.97rem;line-height:1.75;margin-bottom:1.2rem">Peel Education was founded with one clear mission &mdash; to give every student access to honest, eligibility-based guidance that actually leads to success. We saw too many students being misled by consultancies making empty promises, and we decided to do things differently.</p>
-      <p style="color:#5a6a7a;font-size:.97rem;line-height:1.75;margin-bottom:1.5rem">Today, with 5+ years of experience and 300+ students guided, we are proud to be one of the most trusted education consultancies in Canada. We serve students locally and globally, helping them find the right path based on their actual eligibility and goals.</p>
+      <p style="color:#5a6a7a;font-size:.97rem;line-height:1.75;margin-bottom:1.5rem">Today, with 5+ years of experience and 5000+ students guided, we are proud to be one of the most trusted education consultancies in Canada. We serve students locally and globally, helping them find the right path based on their actual eligibility and goals.</p>
       <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.8rem">
-        <div style="text-align:center;padding:1.2rem 1.5rem;background:#f8f9fb;border-radius:14px;border:1px solid #e8eef5"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--navy)">300<span style="color:var(--gold)">+</span></div><div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Students Guided</div></div>
+        <div style="text-align:center;padding:1.2rem 1.5rem;background:#f8f9fb;border-radius:14px;border:1px solid #e8eef5"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--navy)">5000<span style="color:var(--gold)">+</span></div><div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Students Guided</div></div>
         <div style="text-align:center;padding:1.2rem 1.5rem;background:#f8f9fb;border-radius:14px;border:1px solid #e8eef5"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--navy)">95<span style="color:var(--gold)">%</span></div><div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Success Rate</div></div>
         <div style="text-align:center;padding:1.2rem 1.5rem;background:#f8f9fb;border-radius:14px;border:1px solid #e8eef5"><div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--navy)">5<span style="color:var(--gold)">+</span></div><div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Years Experience</div></div>
       </div>
