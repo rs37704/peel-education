@@ -80,7 +80,7 @@ body{background:#fff;color:#1a1a2e;font-family:'DM Sans',sans-serif;overflow-x:h
 .stat-box{flex:1;min-width:140px;padding:1.8rem 1.2rem;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
 .stat-box:last-child{border-right:none}
 .stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:900;color:#fff}
-.stat-num span{color:var(--gold2)}
+.stat-num span{color:var(--gold2)}.stat-num .count-num{color:#fff}
 .stat-lbl{font-size:.77rem;color:#a8c0d8;margin-top:.2rem}
 
 /* CARDS */
@@ -198,6 +198,21 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Peel Education","alternateName":"Peel Education Consultancy","url":"https://www.peeledu.ca","description":"Peel Education is a trusted Canadian education consultancy helping students with PSW, ECEA, Pharmacy Assistant, college admissions and career guidance.","telephone":"+14379924377","email":"peeledu@yahoo.com","address":{"@type":"PostalAddress","addressRegion":"Ontario","addressCountry":"CA","addressLocality":"Peel Region"},"openingHours":"Mo-Fr 09:00-17:00","sameAs":["https://www.instagram.com/peeleducation","https://www.facebook.com/share/1JmbuxTaH8/","https://www.tiktok.com/@peeleducation"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Peel Education","url":"https://www.peeledu.ca","telephone":"+14379924377","email":"peeledu@yahoo.com","address":{"@type":"PostalAddress","addressRegion":"Ontario","addressCountry":"CA","addressLocality":"Peel Region"},"geo":{"@type":"GeoCoordinates","latitude":43.7315,"longitude":-79.7624},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},"priceRange":"Free Consultation","areaServed":"Canada"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Peel Education?","acceptedAnswer":{"@type":"Answer","text":"Peel Education is a Canadian education consultancy helping students with PSW programs, ECEA, Pharmacy Assistant, college admissions and career guidance in Canada."}},{"@type":"Question","name":"How do I apply for PSW program in Ontario?","acceptedAnswer":{"@type":"Answer","text":"Contact Peel Education at 437-992-4377 for a free consultation. We assess your eligibility and guide you through PSW enrollment at a top Ontario college."}},{"@type":"Question","name":"Is Peel Education consultation free?","acceptedAnswer":{"@type":"Answer","text":"Yes, the initial consultation is completely free. Call 437-992-4377 or email peeledu@yahoo.com."}}]}</script>
+
+<style>
+.count-num {
+  display: inline-block;
+  transition: all 0.1s;
+}
+@keyframes countPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); color: #e8b84b; }
+  100% { transform: scale(1); }
+}
+.count-done {
+  animation: countPop 0.4s ease;
+}
+</style>
 </head>
 <body>
 <div class="topbar">
@@ -258,11 +273,11 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
 <!-- STATS -->
 <section style="background:#fff;padding:0 5%">
   <div class="stats-bar reveal" style="transform:translateY(-30px)">
-    <div class="stat-box"><div class="stat-num">5000<span>+</span></div><div class="stat-lbl">Students Guided</div></div>
-    <div class="stat-box"><div class="stat-num">95<span>%</span></div><div class="stat-lbl">Success Rate</div></div>
-    <div class="stat-box"><div class="stat-num">10<span>+</span></div><div class="stat-lbl">Countries Served</div></div>
-    <div class="stat-box"><div class="stat-num">5<span>+</span></div><div class="stat-lbl">Years Experience</div></div>
-    <div class="stat-box"><div class="stat-num">10<span>+</span></div><div class="stat-lbl">Countries Served</div></div>
+    <div class="stat-box"><div class="stat-num"><span class="count-num" data-target="5000" data-suffix="+">0</span></div><div class="stat-lbl">Students Guided</div></div>
+    <div class="stat-box"><div class="stat-num"><span class="count-num" data-target="95" data-suffix="%">0</span></div><div class="stat-lbl">Success Rate</div></div>
+    <div class="stat-box"><div class="stat-num"><span class="count-num" data-target="10" data-suffix="+">0</span></div><div class="stat-lbl">Countries Served</div></div>
+    <div class="stat-box"><div class="stat-num"><span class="count-num" data-target="5" data-suffix="+">0</span></div><div class="stat-lbl">Years Experience</div></div>
+    <div class="stat-box"><div class="stat-num"><span class="count-num" data-target="10" data-suffix="+">0</span></div><div class="stat-lbl">Countries Served</div></div>
   </div>
 </section>
 
@@ -315,19 +330,19 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
         <p style="color:#5a6a7a;font-size:.94rem;line-height:1.72;margin-bottom:1.4rem">We assess your eligibility first and only guide you toward programs where you truly qualify &mdash; no false promises, no wasted time or money.</p>
         <div class="grid-4" style="grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1.8rem">
           <div style="background:#f8f9fb;border-radius:12px;padding:1rem;border:1px solid #e8eef5">
-            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b">5000<span style="color:#c9922a">+</span></div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b"><span class="count-num" data-target="5000" data-suffix="+">0</span></div>
             <div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Students Guided</div>
           </div>
           <div style="background:#f8f9fb;border-radius:12px;padding:1rem;border:1px solid #e8eef5">
-            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b">95<span style="color:#c9922a">%</span></div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b"><span class="count-num" data-target="95" data-suffix="%">0</span></div>
             <div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Success Rate</div>
           </div>
           <div style="background:#f8f9fb;border-radius:12px;padding:1rem;border:1px solid #e8eef5">
-            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b">20<span style="color:#c9922a">+</span></div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b"><span class="count-num" data-target="20" data-suffix="+">0</span></div>
             <div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Partner Colleges</div>
           </div>
           <div style="background:#f8f9fb;border-radius:12px;padding:1rem;border:1px solid #e8eef5">
-            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b">10<span style="color:#c9922a">+</span></div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#1b3a6b"><span class="count-num" data-target="10" data-suffix="+">0</span></div>
             <div style="font-size:.78rem;color:#5a6a7a;margin-top:.2rem">Countries Served</div>
           </div>
         </div>
@@ -513,6 +528,87 @@ function handleForm(formId,msgId){
 handleForm('contact-form','form-msg');
 handleForm('agent-form','amsg');
 handleForm('student-form','smsg');
+</script>
+
+<script>
+(function(){
+  var counted = false;
+
+  function easeOutQuart(t) {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-target'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var duration = target >= 1000 ? 2200 : 1600;
+    var startTime = null;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var elapsed = timestamp - startTime;
+      var progress = Math.min(elapsed / duration, 1);
+      var eased = easeOutQuart(progress);
+      var current = Math.floor(eased * target);
+
+      // Format with comma for thousands
+      if (current >= 1000) {
+        el.textContent = current.toLocaleString() + suffix;
+      } else {
+        el.textContent = current + suffix;
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target >= 1000 ? target.toLocaleString() + suffix : target + suffix;
+        el.classList.add('count-done');
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  function runCounters() {
+    if (counted) return;
+    var els = document.querySelectorAll('.count-num');
+    if (!els.length) return;
+    counted = true;
+    els.forEach(function(el, i) {
+      setTimeout(function() {
+        animateCounter(el);
+      }, i * 180);
+    });
+  }
+
+  // Trigger when stats bar scrolls into view
+  var statsBar = document.querySelector('.stats-bar');
+  if (statsBar) {
+    if ('IntersectionObserver' in window) {
+      var statsObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            runCounters();
+            statsObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      statsObs.observe(statsBar);
+    } else {
+      // Fallback: run after 1s
+      setTimeout(runCounters, 1000);
+    }
+  }
+
+  // Also run if page loads with stats already visible
+  window.addEventListener('load', function() {
+    if (statsBar) {
+      var rect = statsBar.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        setTimeout(runCounters, 500);
+      }
+    }
+  });
+})();
 </script>
 </body>
 </html>
