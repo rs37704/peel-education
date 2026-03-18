@@ -389,93 +389,249 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
     </div>
   </div>
 </footer>
+<!-- WHATSAPP + CHATBOT -->
+<style>
+.cwq{background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.24rem .55rem;border-radius:50px;font-size:.68rem;font-weight:600;cursor:pointer;font-family:"DM Sans",sans-serif}
+.cwq:hover{background:#1b3a6b;color:#fff;border-color:#1b3a6b}
+#cwmsgs::-webkit-scrollbar{width:3px}
+#cwmsgs::-webkit-scrollbar-thumb{background:#c9922a;border-radius:2px}
+@media(max-width:460px){#cwwin{width:calc(100vw - 26px)!important}}
+@keyframes wapulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.5}}
+@keyframes chatpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+</style>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs." target="_blank" title="Chat on WhatsApp" style="position:fixed;bottom:88px;right:22px;z-index:9998;width:50px;height:50px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.55);text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.12)'" onmouseout="this.style.transform='scale(1)'">
+  <svg width="25" height="25" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span style="position:absolute;top:-2px;right:-2px;width:11px;height:11px;background:#fff;border-radius:50%;border:2px solid #25D366;animation:wapulse 1.8s infinite"></span>
+</a>
+
+<!-- Chat Now Button -->
 <div id="cw" style="position:fixed;bottom:22px;right:22px;z-index:9999;font-family:'DM Sans',sans-serif">
-  <div id="cwwin" style="display:none;width:310px;background:#fff;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.18);overflow:hidden;flex-direction:column;border:1px solid #e8eef5;margin-bottom:10px">
+
+  <!-- Chat Window -->
+  <div id="cwwin" style="display:none;width:312px;background:#fff;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.2);overflow:hidden;flex-direction:column;border:1px solid #e8eef5;margin-bottom:10px">
+
+    <!-- Header -->
     <div style="background:linear-gradient(135deg,#1b3a6b,#0d2144);padding:.9rem 1.1rem;display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:.6rem">
-        <div style="width:34px;height:34px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:#fff;font-weight:800;flex-shrink:0">PE</div>
-        <div><div style="color:#fff;font-weight:700;font-size:.88rem">Peel Education</div><div style="color:#a8c0d8;font-size:.68rem;display:flex;align-items:center;gap:.25rem"><span style="width:6px;height:6px;background:#4caf50;border-radius:50%;display:inline-block"></span>Online now</div></div>
+        <div style="width:34px;height:34px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.58rem;color:#fff;font-weight:800;flex-shrink:0">PE</div>
+        <div>
+          <div style="color:#fff;font-weight:700;font-size:.88rem">Peel Education</div>
+          <div style="color:#a8c0d8;font-size:.68rem;display:flex;align-items:center;gap:.3rem"><span style="width:6px;height:6px;background:#4caf50;border-radius:50%;display:inline-block"></span>Online now</div>
+        </div>
       </div>
-      <button onclick="cwClose()" style="background:rgba(255,255,255,.15);border:none;color:#fff;width:24px;height:24px;border-radius:50%;cursor:pointer;font-size:.85rem;font-weight:700">&times;</button>
+      <button onclick="cwClose()" style="background:rgba(255,255,255,.15);border:none;color:#fff;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:1rem;font-weight:700;line-height:1">&times;</button>
     </div>
-    <div id="cwmsgs" style="height:260px;overflow-y:auto;padding:.9rem;display:flex;flex-direction:column;gap:.65rem;background:#f8f9fb"></div>
+
+    <!-- Messages -->
+    <div id="cwmsgs" style="height:270px;overflow-y:auto;padding:.9rem;display:flex;flex-direction:column;gap:.7rem;background:#f8f9fb"></div>
+
+    <!-- Quick Buttons -->
     <div style="padding:.5rem .8rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;flex-wrap:wrap;gap:.3rem">
       <button class="cwq" onclick="cwQ('programs')">Programs</button>
       <button class="cwq" onclick="cwQ('psw')">PSW</button>
       <button class="cwq" onclick="cwQ('ecea')">ECEA</button>
+      <button class="cwq" onclick="cwQ('pharmacy')">Pharmacy</button>
       <button class="cwq" onclick="cwQ('cost')">Fees</button>
       <button class="cwq" onclick="cwQ('eligibility')">Eligibility</button>
-      <button class="cwq" onclick="cwQ('consult')">Free Consult</button>
       <button class="cwq" onclick="cwQ('agent')">Agent Partner</button>
-      <button class="cwq" onclick="cwQ('contact')">Contact</button>
+      <button class="cwq" onclick="cwQ('consult')">Free Consult</button>
     </div>
-    <div style="padding:.6rem .85rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;gap:.45rem">
-      <input id="cwin" type="text" placeholder="Type your question..." style="flex:1;border:1.5px solid #e0e8f0;border-radius:50px;padding:.48rem .85rem;font-size:.82rem;outline:none;font-family:'DM Sans',sans-serif;color:#0d1a2e;background:#f8f9fb"/>
-      <button onclick="cwSend()" style="background:#c9922a;color:#fff;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:.95rem;flex-shrink:0">&#10148;</button>
+
+    <!-- Input -->
+    <div style="padding:.65rem .85rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;gap:.45rem;align-items:center">
+      <input id="cwin" type="text" placeholder="Type your question..." style="flex:1;border:1.5px solid #e0e8f0;border-radius:50px;padding:.5rem .9rem;font-size:.82rem;outline:none;font-family:'DM Sans',sans-serif;color:#0d1a2e;background:#f8f9fb"/>
+      <button onclick="cwSend()" style="background:#c9922a;color:#fff;border:none;border-radius:50%;width:33px;height:33px;cursor:pointer;font-size:.95rem;flex-shrink:0;display:flex;align-items:center;justify-content:center">&#10148;</button>
     </div>
   </div>
+
+  <!-- Toggle Button -->
   <button onclick="cwOpen()" id="cwbtn" style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#1b3a6b,#0d2144);border:3px solid #c9922a;color:#fff;cursor:pointer;box-shadow:0 6px 22px rgba(27,58,107,.4);display:flex;align-items:center;justify-content:center;margin-left:auto;position:relative;flex-direction:column;gap:1px">
     <span style="font-size:.55rem;font-weight:800;letter-spacing:-.2px;line-height:1.1;text-align:center">CHAT<br>NOW</span>
     <span id="cwdot" style="display:none;position:absolute;top:-3px;right:-3px;width:13px;height:13px;background:#e8b84b;border-radius:50%;border:2px solid #fff"></span>
   </button>
 </div>
-<style>.cwq{background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.24rem .55rem;border-radius:50px;font-size:.68rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}.cwq:hover{background:#1b3a6b;color:#fff;border-color:#1b3a6b}#cwmsgs::-webkit-scrollbar{width:3px}#cwmsgs::-webkit-scrollbar-thumb{background:#c9922a;border-radius:2px}@media(max-width:460px){#cwwin{width:calc(100vw - 26px)!important}}</style>
+
 <script>
 (function(){
-var KB={welcome:"Hi! 👋 Welcome to Peel Education.<br><br>We help students and agent partners with college admissions, PSW, ECEA, Pharmacy Assistant programs and career guidance in Canada. What can I help you with?",programs:"We offer:<br><br>&#9679; <b>College Admissions</b><br>&#9679; <b>PSW Program</b><br>&#9679; <b>ECEA Program</b><br>&#9679; <b>Pharmacy Assistant</b><br>&#9679; <b>Short-Term Courses</b><br>&#9679; <b>Career Counselling</b><br><br>Which one interests you?",psw:"<b>PSW — Personal Support Worker</b><br><br>&#9679; High demand healthcare career<br>&#9679; Duration: 6–12 months<br>&#9679; Pay: $19–$35/hr<br>&#9679; Hospitals &amp; care homes<br><br>Call <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>!",ecea:"<b>ECEA — Early Childhood Educator Assistant</b><br><br>&#9679; Daycares &amp; schools<br>&#9679; Duration: 8–12 months<br>&#9679; Pay: $19–$35/hr<br><br>Call <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>!",cost:"Our <b>consultation is FREE</b>.<br><br>Program costs vary — we discuss exact fees during your free consultation.<br><br>Call <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>!",eligibility:"Eligibility varies by program. We assess YOUR eligibility first — honest recommendations only.<br><br>Book a free consultation to find out!",consult:"<b>Free Consultation — No obligation!</b><br><br>&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'><b>437-992-4377</b></a><br>&#9679; WhatsApp: <a href='https://wa.me/14379924377' target='_blank' style='color:#c9922a'><b>Message Us</b></a><br>&#9679; Email: <a href='mailto:peeledu@yahoo.com' style='color:#c9922a'>peeledu@yahoo.com</a>",agent:"<b>Agent Partners</b><br><br>We work with educational agents across Canada and globally. Register as an agent partner to access:<br><br>&#9679; Higher commissions<br>&#9679; Priority support<br>&#9679; Partner college access<br><br>Visit our <a href='agent.html' style='color:#c9922a'>Agent Registration</a> page!",contact:"&#9679; <b>Phone:</b> <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a><br>&#9679; <b>Email:</b> <a href='mailto:peeledu@yahoo.com' style='color:#c9922a'>peeledu@yahoo.com</a><br>&#9679; <b>WhatsApp:</b> <a href='https://wa.me/14379924377' target='_blank' style='color:#c9922a'>437-992-4377</a><br>&#9679; <b>Hours:</b> Mon–Fri 9am–5pm EST",fallback:"For the best answer:<br><br>&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'><b>437-992-4377</b></a><br>&#9679; WhatsApp: <a href='https://wa.me/14379924377' target='_blank' style='color:#c9922a'><b>Chat Now</b></a><br>&#9679; Email: <a href='mailto:peeledu@yahoo.com' style='color:#c9922a'>peeledu@yahoo.com</a>"};
-function bot(msg){var b=document.getElementById('cwmsgs'),d=document.createElement('div');d.style.cssText='display:flex;gap:.4rem;align-items:flex-start';d.innerHTML='<div style="width:24px;height:24px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.55rem;color:#fff;font-weight:800;flex-shrink:0">PE</div><div style="background:#fff;border:1px solid #e8eef5;border-radius:11px;border-bottom-left-radius:3px;padding:.6rem .8rem;font-size:.81rem;color:#0d1a2e;line-height:1.6;max-width:88%">'+msg+'</div>';b.appendChild(d);b.scrollTop=b.scrollHeight;}
-function usr(msg){var b=document.getElementById('cwmsgs'),d=document.createElement('div');d.style.cssText='display:flex;justify-content:flex-end';d.innerHTML='<div style="background:#1b3a6b;color:#fff;border-radius:11px;border-bottom-right-radius:3px;padding:.6rem .8rem;font-size:.81rem;line-height:1.6;max-width:88%">'+msg+'</div>';b.appendChild(d);b.scrollTop=b.scrollHeight;}
-function smart(t){t=t.toLowerCase();if(t.match(/hi|hello|hey/))return KB.welcome;if(t.match(/program|service|offer/))return KB.programs;if(t.match(/psw|personal support/))return KB.psw;if(t.match(/ecea|early child/))return KB.ecea;if(t.match(/pharm/))return"<b>Pharmacy Assistant</b><br><br>&#9679; Pharmacies &amp; hospitals<br>&#9679; Duration: 4–8 months<br>&#9679; Pay: $19–$35/hr<br><br>Call <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>!";if(t.match(/cost|fee|price|money/))return KB.cost;if(t.match(/elig|qualify/))return KB.eligibility;if(t.match(/consult|book|free/))return KB.consult;if(t.match(/agent|partner|b2b/))return KB.agent;if(t.match(/contact|call|email|phone/))return KB.contact;if(t.match(/thank/))return"You're welcome! 😊 Call <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a> anytime!";return KB.fallback;}
-window.cwOpen=function(){document.getElementById('cwwin').style.display='flex';document.getElementById('cwwin').style.flexDirection='column';document.getElementById('cwdot').style.display='none';if(!document.getElementById('cwmsgs').children.length)setTimeout(function(){bot(KB.welcome);},300);setTimeout(function(){document.getElementById('cwin').focus();},350);};
-window.cwClose=function(){document.getElementById('cwwin').style.display='none';};
-window.cwQ=function(k){usr(k==='programs'?'What programs do you offer?':k==='psw'?'Tell me about PSW':k==='ecea'?'Tell me about ECEA':k==='cost'?'What are the fees?':k==='eligibility'?'Eligibility requirements?':k==='consult'?'How to book free consultation?':k==='agent'?'I am an agent partner':'How to contact you?');setTimeout(function(){bot(KB[k]||KB.fallback);},400);};
-window.cwSend=function(){var i=document.getElementById('cwin'),t=i.value.trim();if(!t)return;i.value='';usr(t);setTimeout(function(){bot(smart(t));},450);};
-document.getElementById('cwin').addEventListener('keydown',function(e){if(e.key==='Enter')cwSend();});
-setTimeout(function(){document.getElementById('cwdot').style.display='block';},5000);
-})();
-</script>
-<script>
-var rv=document.querySelectorAll('.reveal');
-if('IntersectionObserver' in window){var ob=new IntersectionObserver(function(e){e.forEach(function(x,i){if(x.isIntersecting){setTimeout(function(){x.target.classList.add('visible');},i*60);ob.unobserve(x.target);}});},{threshold:0.07});rv.forEach(function(el){ob.observe(el);});}else{rv.forEach(function(el){el.classList.add('visible');});}
 
-function toggleMenu(){
-  var nl=document.querySelector('.nav-links'),cta=document.querySelector('.nav-cta');
-  if(nl.style.display==='flex'){nl.style.display='none';if(cta)cta.style.display='none';}
-  else{nl.style.cssText='display:flex;flex-direction:column;position:absolute;top:65px;left:0;right:0;background:#fff;padding:1.2rem 5%;gap:.9rem;border-bottom:2px solid #c9922a;z-index:99';if(cta){cta.style.display='inline-block';cta.style.marginTop='.3rem';}}
+var KB = {
+  welcome: "Hi! Welcome to Peel Education. I can help with PSW, ECEA, Pharmacy Assistant, College Admissions and Career Guidance in Canada. What would you like to know?",
+  programs: "We offer:\n\n&#9679; College Admissions\n&#9679; PSW Program\n&#9679; ECEA Program\n&#9679; Pharmacy Assistant\n&#9679; Short-Term Courses\n&#9679; Career Counselling\n\nWhich one interests you?",
+  psw: "<b>PSW - Personal Support Worker</b>\n\n&#9679; Most in-demand healthcare career\n&#9679; Duration: 6-12 months\n&#9679; Pay: $19-$35/hr\n&#9679; Hospitals & care homes\n\nWould you like to know more?",
+  ecea: "<b>ECEA - Early Childhood Educator Assistant</b>\n\n&#9679; Daycares & schools\n&#9679; Duration: 8-12 months\n&#9679; Pay: $19-$35/hr\n\nWould you like to register?",
+  pharmacy: "<b>Pharmacy Assistant</b>\n\n&#9679; Pharmacies & hospitals\n&#9679; Duration: 4-8 months\n&#9679; Pay: $19-$35/hr\n\nWould you like to know more?",
+  cost: "Our consultation is FREE with no obligation.\n\nProgram costs vary by college. We give you exact costs during your free consultation.",
+  eligibility: "Eligibility varies by program. We assess YOUR eligibility first - honest recommendations only.\n\nBook a free consultation to find out!",
+  consult: "<b>Free Consultation - No obligation!</b>\n\n&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>\n&#9679; WhatsApp: <a href='https://wa.me/14379924377' target='_blank' style='color:#25D366'>Message Us</a>\n&#9679; Email: peeledu@yahoo.com",
+  agent: "<b>Agent Partners</b>\n\nJoin our network to place students in top Canadian colleges.\n\n&#9679; Competitive commissions\n&#9679; 20+ partner colleges\n&#9679; Fast processing",
+  fallback: "For the best answer please contact us:\n\n&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'><b>437-992-4377</b></a>\n&#9679; WhatsApp: <a href='https://wa.me/14379924377' target='_blank' style='color:#25D366'><b>Chat Now</b></a>\n&#9679; Email: peeledu@yahoo.com"
+};
+
+var msgCount = 0;
+var leadSent = false;
+var awaitingNumber = false;
+
+function bot(html) {
+  var b = document.getElementById('cwmsgs');
+  var d = document.createElement('div');
+  d.style.cssText = 'display:flex;gap:.4rem;align-items:flex-start';
+  d.innerHTML = '<div style="width:24px;height:24px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.55rem;color:#fff;font-weight:800;flex-shrink:0">PE</div>'
+    + '<div style="background:#fff;border:1px solid #e8eef5;border-radius:12px;border-bottom-left-radius:3px;padding:.65rem .85rem;font-size:.82rem;color:#0d1a2e;line-height:1.6;max-width:88%">' + html.replace(/\n/g,'<br>') + '</div>';
+  b.appendChild(d);
+  b.scrollTop = b.scrollHeight;
 }
 
-// Active nav
-document.querySelectorAll('.nav-links a').forEach(function(a){
-  var href=a.getAttribute('href');
-  if(href&&(window.location.pathname.endsWith(href)||window.location.href.indexOf(href.replace('.html',''))>-1))a.classList.add('active');
-  if(href==='index.html'&&(window.location.pathname==='/'||window.location.pathname.endsWith('/')||window.location.pathname.endsWith('index.html')))a.classList.add('active');
-});
+function usr(txt) {
+  var b = document.getElementById('cwmsgs');
+  var d = document.createElement('div');
+  d.style.cssText = 'display:flex;justify-content:flex-end';
+  d.innerHTML = '<div style="background:#1b3a6b;color:#fff;border-radius:12px;border-bottom-right-radius:3px;padding:.65rem .85rem;font-size:.82rem;line-height:1.6;max-width:88%">' + txt + '</div>';
+  b.appendChild(d);
+  b.scrollTop = b.scrollHeight;
+}
 
-// Form submit helper
-function handleForm(formId,msgId){
-  var f=document.getElementById(formId);
-  if(!f)return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    var btn=f.querySelector('.sbtn'),msg=document.getElementById(msgId);
-    btn.textContent='Sending...';btn.disabled=true;msg.style.display='none';
-    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
-    .then(function(r){return r.json();})
-    .then(function(d){
-      msg.style.display='block';
-      if(d.ok){msg.className='msg-ok';msg.textContent='Submitted successfully! We will contact you within 24 hours.';f.reset();}
-      else{msg.className='msg-err';msg.textContent='Something went wrong. Please email peeledu@yahoo.com.';}
-      btn.textContent='Submit';btn.disabled=false;
-    })
-    .catch(function(){
-      msg.style.display='block';msg.className='msg-err';msg.textContent='Connection error. Please email peeledu@yahoo.com or call 437-992-4377.';
-      btn.textContent='Submit';btn.disabled=false;
-    });
+function addWAButton() {
+  var b = document.getElementById('cwmsgs');
+  var d = document.createElement('div');
+  d.style.cssText = 'display:flex;justify-content:center;padding:.3rem 0';
+  d.innerHTML = '<a href="https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs." target="_blank" style="background:#25D366;color:#fff;border-radius:50px;padding:.55rem 1.1rem;font-size:.8rem;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:.4rem"><svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp Us Now</a>';
+  b.appendChild(d);
+  b.scrollTop = b.scrollHeight;
+}
+
+function askForNumber() {
+  if (leadSent) return;
+  setTimeout(function() {
+    bot('Want a faster reply? Share your WhatsApp number and we will contact you directly!<br><br>Just type your number below');
+    awaitingNumber = true;
+  }, 800);
+}
+
+function sendLead(phone) {
+  var fd = new FormData();
+  fd.append('_subject', 'New Chatbot Lead - Peel Education');
+  fd.append('Lead Source', 'Website Chatbot');
+  fd.append('WhatsApp Number', phone);
+  fd.append('Page URL', window.location.href);
+  fd.append('Time', new Date().toLocaleString());
+  fetch('https://formspree.io/f/xnjgokgl', {
+    method: 'POST',
+    body: fd,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    leadSent = true;
+    awaitingNumber = false;
+    bot('We got your number! We will WhatsApp you at <b>' + phone + '</b> shortly.<br><br>You can also reach us:<br>&#9679; <a href="tel:4379924377" style="color:#c9922a">437-992-4377</a><br>&#9679; <a href="mailto:peeledu@yahoo.com" style="color:#c9922a">peeledu@yahoo.com</a>');
+    addWAButton();
+  })
+  .catch(function() {
+    leadSent = true;
+    awaitingNumber = false;
+    bot('Thank you! We will contact you soon.<br><br>Or WhatsApp us directly:');
+    addWAButton();
   });
 }
-handleForm('contact-form','form-msg');
-handleForm('agent-form','amsg');
-handleForm('student-form','smsg');
+
+function isPhone(t) {
+  return /^[\d\s\+\-\(\)]{7,15}$/.test(t.trim());
+}
+
+function smart(t) {
+  var l = t.toLowerCase();
+  if (l.match(/hi|hello|hey/)) return KB.welcome;
+  if (l.match(/program|service|offer/)) return KB.programs;
+  if (l.match(/psw|personal support/)) return KB.psw;
+  if (l.match(/ecea|early child/)) return KB.ecea;
+  if (l.match(/pharm/)) return KB.pharmacy;
+  if (l.match(/cost|fee|price|money/)) return KB.cost;
+  if (l.match(/elig|qualify/)) return KB.eligibility;
+  if (l.match(/consult|book|free|start/)) return KB.consult;
+  if (l.match(/agent|partner|b2b/)) return KB.agent;
+  if (l.match(/contact|call|email|phone/)) return KB.consult;
+  if (l.match(/short|certificate|diploma/)) return "Short-Term Courses\n\n&#9679; 4-12 months\n&#9679; Career-ready fast\n&#9679; Pay: $19-$35/hr\n\nContact us to find the right course!";
+  if (l.match(/career|counsel/)) return "Career Counselling\n\n&#9679; One-on-one sessions\n&#9679; Personalized roadmap\n\nCall <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>!";
+  if (l.match(/college|admission/)) return "College Admissions\n\n&#9679; Top public colleges Canada\n&#9679; Full application support\n\nRegister on our Students page!";
+  if (l.match(/thank/)) return "You're welcome! Feel free to ask anything else or WhatsApp us: <a href='https://wa.me/14379924377' target='_blank' style='color:#25D366'>437-992-4377</a>";
+  return KB.fallback;
+}
+
+window.cwOpen = function() {
+  var win = document.getElementById('cwwin');
+  win.style.display = 'flex';
+  win.style.flexDirection = 'column';
+  document.getElementById('cwdot').style.display = 'none';
+  if (!document.getElementById('cwmsgs').children.length) {
+    setTimeout(function() { bot(KB.welcome); msgCount++; }, 300);
+  }
+  setTimeout(function() { document.getElementById('cwin').focus(); }, 350);
+};
+
+window.cwClose = function() {
+  document.getElementById('cwwin').style.display = 'none';
+};
+
+window.cwQ = function(k) {
+  var labels = {
+    programs: 'What programs do you offer?',
+    psw: 'Tell me about PSW',
+    ecea: 'Tell me about ECEA',
+    pharmacy: 'Tell me about Pharmacy Assistant',
+    cost: 'What are the fees?',
+    eligibility: 'What are eligibility requirements?',
+    agent: 'I am an agent partner',
+    consult: 'How to book free consultation?'
+  };
+  usr(labels[k] || k);
+  msgCount++;
+  setTimeout(function() {
+    bot(KB[k] || KB.fallback);
+    msgCount++;
+    if (msgCount >= 4 && !leadSent) askForNumber();
+  }, 450);
+};
+
+window.cwSend = function() {
+  var inp = document.getElementById('cwin');
+  var btn = document.querySelector('#cw button[onclick="cwSend()"]');
+  var t = inp.value.trim();
+  if (!t) return;
+  inp.value = '';
+  usr(t);
+  msgCount++;
+
+  if (awaitingNumber) {
+    if (isPhone(t)) {
+      bot('Perfect! Getting your details...');
+      sendLead(t);
+    } else {
+      bot('Please enter your WhatsApp number so we can contact you directly (e.g. 4379921234)');
+    }
+    return;
+  }
+
+  setTimeout(function() {
+    bot(smart(t));
+    msgCount++;
+    if (msgCount >= 4 && !leadSent) askForNumber();
+  }, 450);
+};
+
+document.getElementById('cwin').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') cwSend();
+});
+
+// Show notification dot after 5 seconds
+setTimeout(function() {
+  if (document.getElementById('cwwin').style.display === 'none') {
+    document.getElementById('cwdot').style.display = 'block';
+  }
+}, 5000);
+
+})();
 </script>
 </body>
 </html>
