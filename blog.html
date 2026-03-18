@@ -3,100 +3,38 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Blog | Peel Education Consultancy Group | PSW ECEA College Admissions Tips Canada</title>
-<meta name="description" content="Education tips and guides for students in Canada. Learn about PSW careers, college admissions steps, ECEA programs and more from Peel Education."/>
-<meta name="keywords" content="PSW career Canada, college admissions guide Canada, ECEA program tips Ontario, education blog Canada"/>
+<title>Blog | Peel Education Consultancy Group</title>
+<meta name="description" content="Education tips and guides for students in Canada. PSW careers, college admissions, ECEA programs and more."/>
 <meta name="robots" content="index,follow"/>
-<link rel="canonical" href="https://www.peeledu.ca/blog.html"/>
-<meta property="og:title" content="Blog | Peel Education"/>
-<meta property="og:description" content="Education insights, tips and guides for students and agents navigating the Canadian education system."/>
-<meta property="og:url" content="https://www.peeledu.ca/"/>
+<link rel="canonical" href="https://www.peeledu.ca/"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:#fff;color:#1a1a2e;font-family:'DM Sans',sans-serif;overflow-x:hidden}
-:root{--gold:#c9922a;--gold2:#e8b84b;--navy:#1b3a6b;--dark:#080e1a;--muted:#7a8fa8}
+:root{--gold:#c9922a;--gold2:#e8b84b;--navy:#1b3a6b;--dark:#080e1a}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
-
-/* TOP BAR */
-.topbar{background:var(--navy);padding:.4rem 5%}
-.topbar-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.topbar{background:var(--navy);padding:.42rem 5%}
+.topbar-inner{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;flex-wrap:wrap;gap:.4rem}
 .topbar-left{display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap}
-.topbar-left a{color:#a8c0e0;text-decoration:none;font-size:.77rem;display:flex;align-items:center;gap:.3rem;transition:color .2s}
+.topbar-left a{color:#a8c0e0;text-decoration:none;font-size:.78rem;transition:color .2s}
 .topbar-left a:hover{color:var(--gold2)}
-.topbar-right{display:flex;align-items:center;gap:.8rem}
-.social-icon{color:#a8c0e0;text-decoration:none;padding:.28rem .42rem;border:1px solid rgba(255,255,255,.15);border-radius:50px;transition:all .2s;display:inline-flex;align-items:center;justify-content:center;line-height:1}
-.social-icon:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
-.topbar-cta{background:var(--gold);color:#fff;padding:.28rem .85rem;border-radius:50px;text-decoration:none;font-size:.76rem;font-weight:700;transition:all .2s}
+.topbar-right{display:flex;align-items:center;gap:.55rem}
+.sicon{color:#a8c0e0;text-decoration:none;padding:.28rem .38rem;border:1px solid rgba(255,255,255,.15);border-radius:50px;transition:all .2s;display:inline-flex;align-items:center;justify-content:center}
+.sicon:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+.topbar-cta{background:var(--gold);color:#fff;padding:.28rem .82rem;border-radius:50px;text-decoration:none;font-size:.76rem;font-weight:700;transition:all .2s}
 .topbar-cta:hover{background:var(--gold2)}
-
-/* NAV */
 .navbar{background:#fff;border-bottom:3px solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:.75rem 5%;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.07)}
-.nav-brand{display:flex;align-items:center;gap:9px;text-decoration:none}
-.logo-img{height:44px;width:auto}
-.nav-links{display:flex;gap:1.3rem;list-style:none}
-.nav-links a{color:var(--navy);text-decoration:none;font-size:.85rem;font-weight:600;transition:color .2s;position:relative;padding-bottom:2px}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-img{height:46px;width:auto}
+.nav-links{display:flex;gap:1.4rem;list-style:none}
+.nav-links a{color:var(--navy);text-decoration:none;font-size:.86rem;font-weight:600;transition:color .2s;position:relative;padding-bottom:2px}
 .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width .2s}
-.nav-links a:hover,.nav-links a.active{color:var(--gold)}
-.nav-links a:hover::after,.nav-links a.active::after{width:100%}
-.nav-cta{background:var(--gold);color:#fff;padding:.45rem 1.1rem;border-radius:50px;text-decoration:none;font-size:.82rem;font-weight:700;transition:all .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--gold)}.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#fff;padding:.48rem 1.1rem;border-radius:50px;text-decoration:none;font-size:.82rem;font-weight:700;transition:all .2s;white-space:nowrap}
 .nav-cta:hover{background:var(--gold2);transform:translateY(-1px)}
 .menu-btn{display:none;flex-direction:column;gap:5px;cursor:pointer}
 .menu-btn span{width:23px;height:2px;background:var(--navy);border-radius:2px}
-
-/* HERO */
-.hero{min-height:90vh;display:flex;align-items:center;padding:6rem 5% 3.5rem;position:relative;overflow:hidden}
-.hero-bg-img{position:absolute;inset:0;z-index:0}
-.hero-bg-img img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-bg-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,14,26,.91) 0%,rgba(13,33,68,.86) 50%,rgba(27,58,107,.78) 100%)}
-.hero-inner{position:relative;z-index:2;max-width:1100px;margin:0 auto;width:100%}
-.hero-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(201,146,42,.14);border:1px solid rgba(201,146,42,.35);color:var(--gold2);padding:.32rem .88rem;border-radius:50px;font-size:.76rem;font-weight:700;letter-spacing:.5px;margin-bottom:1.3rem}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:1.2rem}
-.hero h1 em{color:var(--gold2);font-style:normal}
-.hero-sub{font-size:1rem;color:#a8c0d8;line-height:1.75;max-width:540px;margin-bottom:2rem}
-.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap}
-
-/* BUTTONS */
-.btn{padding:.75rem 1.7rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.88rem;transition:all .25s;border:none;cursor:pointer;display:inline-block}
-.btn-gold{background:var(--gold);color:#fff;box-shadow:0 4px 16px rgba(201,146,42,.3)}.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
-.btn-white{background:#fff;color:var(--navy)}.btn-white:hover{background:var(--gold);color:#fff}
-.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
-.btn-outline-gold{background:transparent;color:var(--gold);border:2px solid var(--gold)}.btn-outline-gold:hover{background:var(--gold);color:#fff}
-
-/* SECTION */
-.section{padding:5rem 5%}
-.section-inner{max-width:1100px;margin:0 auto}
-.section-center{text-align:center;max-width:650px;margin:0 auto 2.8rem}
-.stag{display:inline-block;color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:.65rem}
-.stitle{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.5rem);font-weight:900;line-height:1.2;margin-bottom:.85rem;color:#0d1a2e}
-.ssub{color:#5a6a7a;font-size:.95rem;line-height:1.7}
-.bg-light{background:#f8f9fb}
-.bg-navy{background:var(--navy)}
-.bg-dark{background:var(--dark)}
-
-/* STATS */
-.stats-bar{display:flex;flex-wrap:wrap;background:var(--navy);border-radius:18px;overflow:hidden;box-shadow:0 8px 36px rgba(27,58,107,.2)}
-.stat-box{flex:1;min-width:140px;padding:1.8rem 1.2rem;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
-.stat-box:last-child{border-right:none}
-.stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:900;color:#fff}
-.stat-num span{color:var(--gold2)}
-.stat-lbl{font-size:.77rem;color:#a8c0d8;margin-top:.2rem}
-
-/* CARDS */
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
-.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem}
-.card{background:#fff;border-radius:16px;padding:1.7rem;border:1px solid #e8eef5;transition:all .3s;position:relative;overflow:hidden}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transition:transform .3s}
-.card:hover{box-shadow:0 8px 28px rgba(27,58,107,.1);transform:translateY(-4px);border-color:rgba(201,146,42,.25)}
-.card:hover::before{transform:scaleX(1)}
-.card-img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:.9rem}
-.card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:.5rem;color:#0d1a2e}
-.card p{color:#5a6a7a;font-size:.86rem;line-height:1.62}
-.card-link{display:inline-block;margin-top:.85rem;color:var(--gold);font-size:.81rem;font-weight:700;text-decoration:none}
-
-/* PAGE HERO */
 .page-hero{background:linear-gradient(135deg,var(--navy),#0d2144);padding:4.5rem 5% 3.5rem;text-align:center;position:relative;overflow:hidden}
 .page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:50px 50px}
 .page-hero-inner{position:relative;z-index:1;max-width:660px;margin:0 auto}
@@ -106,54 +44,67 @@ body{background:#fff;color:#1a1a2e;font-family:'DM Sans',sans-serif;overflow-x:h
 .page-hero p{color:#a8c0d8;font-size:.95rem;line-height:1.7}
 .breadcrumb{display:flex;justify-content:center;gap:.5rem;margin-top:1.2rem;font-size:.79rem;color:#a8c0d8}
 .breadcrumb a{color:var(--gold2);text-decoration:none}
-
-/* GALLERY */
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.section{padding:5rem 5%}
+.bg-light{background:#f8f9fb}
+.bg-navy{background:var(--navy)}
+.sec-center{text-align:center;max-width:650px;margin:0 auto 2.8rem}
+.stag{display:inline-block;color:var(--gold);font-size:.73rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:.65rem}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.5rem);font-weight:900;line-height:1.2;margin-bottom:.85rem;color:#0d1a2e}
+.ssub{color:#5a6a7a;font-size:.95rem;line-height:1.7}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem}
+.card{background:#fff;border-radius:16px;padding:1.7rem;border:1px solid #e8eef5;transition:all .3s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transition:transform .3s}
+.card:hover{box-shadow:0 8px 28px rgba(27,58,107,.1);transform:translateY(-4px);border-color:rgba(201,146,42,.25)}
+.card:hover::before{transform:scaleX(1)}
+.card-img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:.9rem}
+.card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:.5rem;color:#0d1a2e}
+.card p{color:#5a6a7a;font-size:.87rem;line-height:1.62}
+.card-link{display:inline-block;margin-top:.85rem;color:var(--gold);font-size:.81rem;font-weight:700;text-decoration:none}
+.btn{padding:.75rem 1.7rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.88rem;transition:all .25s;border:none;cursor:pointer;display:inline-block}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:0 4px 16px rgba(201,146,42,.3)}.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-white{background:#fff;color:var(--navy)}.btn-white:hover{background:var(--gold);color:#fff}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-og{background:transparent;color:var(--gold);border:2px solid var(--gold)}.btn-og:hover{background:var(--gold);color:#fff}
+.stats-bar{display:flex;flex-wrap:wrap;background:var(--navy);border-radius:18px;overflow:hidden;box-shadow:0 8px 36px rgba(27,58,107,.2)}
+.stat-box{flex:1;min-width:130px;padding:1.8rem 1.2rem;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.stat-box:last-child{border-right:none}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:900;color:#fff}
+.stat-num .count-num{color:#fff}
+.stat-lbl{font-size:.77rem;color:#a8c0d8;margin-top:.2rem}
+.tcard{background:#fff;border-radius:15px;padding:1.7rem;border:1px solid #e8eef5;transition:all .3s}
+.tcard:hover{box-shadow:0 8px 26px rgba(27,58,107,.09);border-color:rgba(201,146,42,.25)}
+.tstars{color:var(--gold);font-size:.9rem;margin-bottom:.75rem}
+.ttext{color:#5a6a7a;font-size:.88rem;line-height:1.75;font-style:italic;margin-bottom:1.1rem}
+.tauthor{display:flex;align-items:center;gap:.7rem}
+.tav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0}
+.tname{font-weight:700;font-size:.88rem;color:#0d1a2e}
+.trole{color:#5a6a7a;font-size:.74rem;margin-top:.1rem}
 .gitem{border-radius:13px;overflow:hidden;position:relative;aspect-ratio:4/3}
 .gitem:first-child{grid-column:span 2;aspect-ratio:16/7}
 .gitem img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .gitem:hover img{transform:scale(1.05)}
 .glabel{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(8,14,26,.88),transparent);padding:.85rem;font-size:.79rem;color:#fff;font-weight:600}
-
-/* TESTI */
-.tcard{background:#fff;border-radius:15px;padding:1.7rem;border:1px solid #e8eef5;transition:all .3s}
-.tcard:hover{box-shadow:0 8px 26px rgba(27,58,107,.09);border-color:rgba(201,146,42,.25)}
-.tstars{color:var(--gold);font-size:.88rem;margin-bottom:.75rem;letter-spacing:2px}
-.ttext{color:#5a6a7a;font-size:.87rem;line-height:1.75;font-style:italic;margin-bottom:1.1rem}
-.tauthor{display:flex;align-items:center;gap:.7rem}
-.tav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0}
-.tname{font-weight:700;font-size:.88rem;color:#0d1a2e}
-.trole{color:#5a6a7a;font-size:.73rem;margin-top:.1rem}
-
-/* PARTNER LOGOS */
-
-
-.partner-logo:hover{border-color:var(--gold);box-shadow:0 4px 14px rgba(201,146,42,.15);transform:translateY(-2px)}
-.partner-logo img{max-width:100%;max-height:100%;object-fit:contain}
-
-/* FORMS */
-.form-wrap{background:#fff;border-radius:18px;padding:2.2rem;box-shadow:0 4px 28px rgba(27,58,107,.07);border:1px solid #e8eef5}
+.fgroup{margin-bottom:1rem}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
-.fgroup{margin-bottom:.95rem}
 label{display:block;font-size:.78rem;color:#5a6a7a;margin-bottom:.36rem;font-weight:600}
-input,textarea,select{width:100%;background:#f8f9fb;border:1.5px solid #e0e8f0;border-radius:10px;padding:.72rem .88rem;color:#0d1a2e;font-family:'DM Sans',sans-serif;font-size:.88rem;transition:border-color .2s,box-shadow .2s;outline:none}
+input,textarea,select{width:100%;background:#f8f9fb;border:1.5px solid #e0e8f0;border-radius:10px;padding:.72rem .88rem;color:#0d1a2e;font-family:'DM Sans',sans-serif;font-size:.88rem;transition:border-color .2s;outline:none}
 input:focus,textarea:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,146,42,.1);background:#fff}
 textarea{resize:vertical;min-height:110px}
 select option{background:#fff}
 .sbtn{width:100%;background:var(--gold);color:#fff;border:none;border-radius:10px;padding:.88rem;font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;transition:all .25s;box-shadow:0 4px 16px rgba(201,146,42,.28)}
 .sbtn:hover{background:var(--gold2);transform:translateY(-2px)}
 .sbtn:disabled{opacity:.6;cursor:not-allowed;transform:none}
-#form-msg,#amsg,#smsg{display:none;margin-top:.8rem;padding:.8rem;border-radius:9px;font-size:.86rem;text-align:center}
-.msg-ok{background:rgba(0,170,80,.08);border:1px solid rgba(0,170,80,.22);color:#008844}
-.msg-err{background:rgba(210,40,40,.07);border:1px solid rgba(210,40,40,.18);color:#cc2222}
-
-/* FOOTER */
+.fmsg{display:none;margin-top:.8rem;padding:.8rem;border-radius:9px;font-size:.86rem;text-align:center}
+.fmsg.ok{background:rgba(0,170,80,.08);border:1px solid rgba(0,170,80,.22);color:#008844}
+.fmsg.err{background:rgba(210,40,40,.07);border:1px solid rgba(210,40,40,.18);color:#cc2222}
 footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:3rem 5% 1.6rem}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;margin-bottom:2rem}
-.footer-brand p{color:#7a8fa8;font-size:.83rem;margin-top:.5rem;line-height:1.6;max-width:230px}
-.footer-social{display:flex;gap:.6rem;margin-top:.9rem;flex-wrap:wrap}
-.fsoc{color:#a8c0d8;text-decoration:none;padding:.3rem .42rem;border:1px solid rgba(255,255,255,.14);border-radius:50px;transition:all .2s;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.footer-brand p{color:#7a8fa8;font-size:.83rem;margin-top:.6rem;line-height:1.6;max-width:230px}
+.footer-social{display:flex;gap:.55rem;margin-top:.9rem;flex-wrap:wrap}
+.fsoc{color:#a8c0d8;text-decoration:none;padding:.3rem .4rem;border:1px solid rgba(255,255,255,.14);border-radius:50px;transition:all .2s;display:inline-flex;align-items:center;justify-content:center}
 .fsoc:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
 .flinks h4{font-size:.78rem;font-weight:700;margin-bottom:.8rem;color:#7a8fa8;letter-spacing:1px;text-transform:uppercase}
 .flinks ul{list-style:none;display:flex;flex-direction:column;gap:.44rem}
@@ -161,240 +112,47 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
 .flinks a:hover{color:var(--gold2)}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:1.1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem}
 .footer-bottom p{color:#7a8fa8;font-size:.76rem}
-
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-
-/* MOBILE */
-@media(max-width:900px){
-  .grid-2,.frow{grid-template-columns:1fr;gap:2rem}
-  .grid-3{grid-template-columns:1fr 1fr}
-  .gitem:first-child{grid-column:span 2}
-  .nav-links,.nav-cta{display:none}
-  .menu-btn{display:flex}
-  .stats-bar{flex-direction:column}
-  .stat-box{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
-  .topbar-right{display:none}
-  .footer-top{flex-direction:column}
-}
-@media(max-width:600px){
-  .section{padding:3.5rem 5%}
-  .grid-3,.grid-4{grid-template-columns:1fr}
-  .gitem:first-child{grid-column:span 1;aspect-ratio:4/3}
-  .hero h1{font-size:2.2rem}
-  .frow{grid-template-columns:1fr}
-}
-
-
-
-.clogo-box:hover{border-color:rgba(201,146,42,.35);box-shadow:0 4px 16px rgba(27,58,107,.1);transform:translateY(-2px)}
-
-.clogo-inner img{max-width:100%;max-height:100%;object-fit:contain}
-
-.clogo-fallback span{color:#fff;font-size:.7rem;font-weight:700;line-height:1.3;text-align:center}
-
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Peel Education","alternateName":"Peel Education Consultancy Group","url":"https://www.peeledu.ca","description":"Peel Education Consultancy Group is a trusted Canadian education consultancy helping students with PSW, ECEA, Pharmacy Assistant, college admissions and career guidance.","telephone":"+14379924377","email":"peeledu@yahoo.com","address":{"@type":"PostalAddress","addressRegion":"Ontario","addressCountry":"CA","addressLocality":"Peel Region"},"openingHours":"Mo-Fr 09:00-17:00","sameAs":["https://www.instagram.com/peeleducation","https://www.facebook.com/share/1JmbuxTaH8/","https://www.tiktok.com/@peeleducation"]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Peel Education","url":"https://www.peeledu.ca","telephone":"+14379924377","email":"peeledu@yahoo.com","address":{"@type":"PostalAddress","addressRegion":"Ontario","addressCountry":"CA","addressLocality":"Peel Region"},"geo":{"@type":"GeoCoordinates","latitude":43.7315,"longitude":-79.7624},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},"priceRange":"Free Consultation","areaServed":"Canada"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Peel Education?","acceptedAnswer":{"@type":"Answer","text":"Peel Education is a Canadian education consultancy helping students with PSW programs, ECEA, Pharmacy Assistant, college admissions and career guidance in Canada."}},{"@type":"Question","name":"How do I apply for PSW program in Ontario?","acceptedAnswer":{"@type":"Answer","text":"Contact Peel Education at 437-992-4377 for a free consultation. We assess your eligibility and guide you through PSW enrollment at a top Ontario college."}},{"@type":"Question","name":"Is Peel Education consultation free?","acceptedAnswer":{"@type":"Answer","text":"Yes, the initial consultation is completely free. Call 437-992-4377 or email peeledu@yahoo.com."}}]}</script>
+@media(max-width:900px){.grid2{grid-template-columns:1fr;gap:2.5rem}.grid3{grid-template-columns:1fr 1fr}.gitem:first-child{grid-column:span 2}.nav-links,.nav-cta{display:none}.menu-btn{display:flex}.stats-bar{flex-direction:column}.stat-box{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}.topbar-right{display:none}.footer-top{flex-direction:column}}
+@media(max-width:600px){.section{padding:3.5rem 5%}.grid3{grid-template-columns:1fr}.gitem:first-child{grid-column:span 1;aspect-ratio:4/3}.frow{grid-template-columns:1fr}.grid4{grid-template-columns:1fr}.page-hero h1{font-size:1.9rem}}</style>
 </head>
 <body>
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-left">
-      <a href="mailto:peeledu@yahoo.com">&#9993; peeledu@yahoo.com</a>
-      <a href="tel:4379924377">&#128222; 437-992-4377</a>
-    </div>
-    <div class="topbar-right">
-      <a href="https://www.instagram.com/peeleducation" target="_blank" class="social-icon" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-      <a href="https://www.facebook.com/share/1JmbuxTaH8/" target="_blank" class="social-icon" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-      <a href="https://www.tiktok.com/@peeleducation" target="_blank" class="social-icon" title="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
-      <a href="https://wa.me/14379924377" target="_blank" class="social-icon" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-      <a href="contact.html" class="topbar-cta">Book Free Consultation</a>
-    </div>
-  </div>
-</div>
-<nav class="navbar">
-  <a href="index.html" class="nav-brand">
-    <img src="data:image/png;base64,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" alt="Peel Education" class="logo-img"/>
-    <div style="line-height:1.2;display:inline-table">
-      <div style="font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:900;color:#1b3a6b;white-space:nowrap;letter-spacing:-.3px">Peel <span style="color:#c9922a">Education</span></div>
-      <div style="font-size:.5rem;font-weight:700;color:#7a8fa8;text-transform:uppercase;margin-top:.1rem;letter-spacing:1.5px">C O N S U L T A N C Y &nbsp;&nbsp; G R O U P</div>
-    </div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="students.html">Students</a></li>
-    <li><a href="agent.html">Agent Registration</a></li>
-    
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    <li><a href="get-in-touch.html">Get In Touch</a></li>
-  </ul>
-  <a href="contact.html" class="nav-cta">Free Consultation</a>
-  <div class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-</nav>
+<div class="topbar"><div class="topbar-inner"><div class="topbar-left"><a href="mailto:peeledu@yahoo.com">&#9993; peeledu@yahoo.com</a><a href="tel:4379924377">&#128222; 437-992-4377</a></div><div class="topbar-right"><a href="https://www.instagram.com/peeleducation" target="_blank" class="sicon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.facebook.com/share/1JmbuxTaH8/" target="_blank" class="sicon" title="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.tiktok.com/@peeleducation" target="_blank" class="sicon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://wa.me/14379924377" target="_blank" class="sicon" title="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a><a href="contact.html" class="topbar-cta">Book Free Consultation</a></div></div></div>
+<nav class="navbar"><a href="index.html" class="nav-brand"><img src="data:image/png;base64,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" alt="Peel Education" class="logo-img"/><div style="line-height:1.2;display:inline-table"><div style="font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:900;color:#1b3a6b;white-space:nowrap;letter-spacing:-.3px">Peel <span style="color:#c9922a">Education</span></div><div style="font-size:.5rem;font-weight:700;color:#7a8fa8;text-transform:uppercase;margin-top:.08rem;width:100%;display:flex;justify-content:space-between;letter-spacing:1px"><span>C O N S U L T A N C Y</span><span>G R O U P</span></div></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="students.html">Students</a></li><li><a href="agent.html">Agent Registration</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="get-in-touch.html">Get In Touch</a></li></ul><a href="contact.html" class="nav-cta">Free Consultation</a><div class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></div></nav>
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="page-tag">Latest Insights</div>
-    <h1>Our <em>Blog</em></h1>
-    <p>Tips, guides and insights for students and agents navigating education in Canada.</p>
-    <div class="breadcrumb"><a href="index.html">Home</a><span>&rsaquo;</span><span>Blog</span></div>
-  </div>
+<div class="page-hero"><div class="page-hero-inner"><div class="page-tag">Latest Insights</div><h1>Our <em>Blog</em></h1><p>Tips, guides and insights for students and agents navigating education in Canada.</p><div class="breadcrumb"><a href="index.html">Home</a><span>&rsaquo;</span><span>Blog</span></div></div></div>
+<section class="section"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:2.8rem">
+<div>
+<div class="card reveal" style="margin-bottom:1.5rem;padding:0;overflow:hidden"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop&q=80" alt="PSW" style="width:100%;height:220px;object-fit:cover"/><div style="padding:1.6rem"><span style="background:rgba(201,146,42,.1);color:#c9922a;font-size:.7rem;font-weight:700;padding:.2rem .62rem;border-radius:50px">Healthcare</span><h2 style="font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:#0d1a2e;margin:1rem 0 .72rem;line-height:1.3">Why PSW is One of the Best Career Choices in Canada Right Now</h2><p style="color:#5a6a7a;font-size:.89rem;line-height:1.7;margin-bottom:1.1rem">Canada faces a major shortage of Personal Support Workers. With an aging population and growing demand, PSW professionals are needed across every province.</p><div style="display:flex;justify-content:space-between;align-items:center"><span style="color:#5a6a7a;font-size:.75rem">March 5, 2025</span><a href="contact.html" style="color:#c9922a;font-size:.82rem;font-weight:700;text-decoration:none">Read More &rarr;</a></div></div></div>
+<div class="card reveal" style="margin-bottom:1.5rem;padding:0;overflow:hidden"><img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&auto=format&fit=crop&q=80" alt="College" style="width:100%;height:200px;object-fit:cover"/><div style="padding:1.6rem"><span style="background:rgba(201,146,42,.1);color:#c9922a;font-size:.7rem;font-weight:700;padding:.2rem .62rem;border-radius:50px">Admissions Guide</span><h2 style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:#0d1a2e;margin:1rem 0 .72rem;line-height:1.3">How to Get Into a Public College in Canada: A Complete Step-by-Step Guide</h2><p style="color:#5a6a7a;font-size:.89rem;line-height:1.7;margin-bottom:1.1rem">From checking eligibility to getting your offer letter — everything you need to know about the Canadian college admissions process.</p><div style="display:flex;justify-content:space-between;align-items:center"><span style="color:#5a6a7a;font-size:.75rem">Feb 18, 2025</span><a href="contact.html" style="color:#c9922a;font-size:.82rem;font-weight:700;text-decoration:none">Read More &rarr;</a></div></div></div>
+<div class="card reveal" style="padding:0;overflow:hidden"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80" alt="Agent" style="width:100%;height:200px;object-fit:cover"/><div style="padding:1.6rem"><span style="background:rgba(201,146,42,.1);color:#c9922a;font-size:.7rem;font-weight:700;padding:.2rem .62rem;border-radius:50px">For Agents</span><h2 style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:#0d1a2e;margin:1rem 0 .72rem;line-height:1.3">Why Partner With a Canadian Education Consultancy as an Agent</h2><p style="color:#5a6a7a;font-size:.89rem;line-height:1.7;margin-bottom:1.1rem">Educational agents who partner with Canadian consultancies see higher placement rates and better commissions.</p><div style="display:flex;justify-content:space-between;align-items:center"><span style="color:#5a6a7a;font-size:.75rem">Jan 30, 2025</span><a href="contact.html" style="color:#c9922a;font-size:.82rem;font-weight:700;text-decoration:none">Read More &rarr;</a></div></div></div>
 </div>
-<section class="section">
-  <div class="section-inner">
-    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:2.8rem">
-      <div>
-        <div class="card reveal" style="margin-bottom:1.5rem;padding:0;overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop&q=80" alt="PSW" style="width:100%;height:220px;object-fit:cover"/>
-          <div style="padding:1.6rem">
-            <span style="background:rgba(201,146,42,.1);color:#c9922a;font-size:.7rem;font-weight:700;padding:.2rem .62rem;border-radius:50px">Healthcare</span>
-            <h2 style="font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:900;color:#0d1a2e;margin:1rem 0 .72rem;line-height:1.3">Why PSW is One of the Best Career Choices in Canada Right Now</h2>
-            <p style="color:#5a6a7a;font-size:.89rem;line-height:1.7;margin-bottom:1.1rem">Canada faces a major shortage of Personal Support Workers. With an aging population and growing demand, PSW professionals are needed across every province.</p>
-            <div style="display:flex;justify-content:space-between;align-items:center"><span style="color:#5a6a7a;font-size:.75rem">March 5, 2025</span><a href="#" style="color:#c9922a;font-size:.82rem;font-weight:700;text-decoration:none">Read Full Article &rarr;</a></div>
-          </div>
-        </div>
-        <div class="card reveal" style="margin-bottom:1.5rem;padding:0;overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&auto=format&fit=crop&q=80" alt="Admissions" style="width:100%;height:200px;object-fit:cover"/>
-          <div style="padding:1.6rem">
-            <span style="background:rgba(201,146,42,.1);color:#c9922a;font-size:.7rem;font-weight:700;padding:.2rem .62rem;border-radius:50px">Admissions Guide</span>
-            <h2 style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:#0d1a2e;margin:1rem 0 .72rem;line-height:1.3">How to Get Into a Public College in Canada: A Complete Step-by-Step Guide</h2>
-            <p style="color:#5a6a7a;font-size:.89rem;line-height:1.7;margin-bottom:1.1rem">From checking eligibility to getting your offer letter — everything you need to know about the Canadian college admissions process.</p>
-            <div style="display:flex;justify-content:space-between;align-items:center"><span style="color:#5a6a7a;font-size:.75rem">Feb 18, 2025</span><a href="#" style="color:#c9922a;font-size:.82rem;font-weight:700;text-decoration:none">Read Full Article &rarr;</a></div>
-          </div>
-        </div>
-        <div class="card reveal" style="padding:0;overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80" alt="Agents" style="width:100%;height:200px;object-fit:cover"/>
-          <div style="padding:1.6rem">
-            <span style="background:rgba(201,146,42,.1);color:#c9922a;font-size:.7rem;font-weight:700;padding:.2rem .62rem;border-radius:50px">For Agents</span>
-            <h2 style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:#0d1a2e;margin:1rem 0 .72rem;line-height:1.3">Why Partner With a Canadian Education Consultancy as an Agent?</h2>
-            <p style="color:#5a6a7a;font-size:.89rem;line-height:1.7;margin-bottom:1.1rem">Educational agents who partner with Canadian consultancies see higher placement rates and better commissions. Here is everything you need to know.</p>
-            <div style="display:flex;justify-content:space-between;align-items:center"><span style="color:#5a6a7a;font-size:.75rem">Jan 30, 2025</span><a href="#" style="color:#c9922a;font-size:.82rem;font-weight:700;text-decoration:none">Read Full Article &rarr;</a></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="reveal" style="background:#f8f9fb;border-radius:16px;padding:1.5rem;border:1px solid #e8eef5;margin-bottom:1.3rem">
-          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:#0d1a2e;margin-bottom:.9rem">Categories</h3>
-          <div style="display:flex;flex-direction:column;gap:.45rem">
-            <a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>Healthcare Careers</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">3</span></a>
-            <a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>Admissions Guide</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">2</span></a>
-            <a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>For Agents</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">2</span></a>
-            <a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>Career Planning</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">4</span></a>
-          </div>
-        </div>
-        <div class="reveal" style="background:linear-gradient(135deg,#1b3a6b,#0d2144);border-radius:16px;padding:1.5rem;margin-bottom:1.3rem">
-          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:#fff;margin-bottom:.7rem">Free Consultation</h3>
-          <p style="color:#a8c0d8;font-size:.85rem;line-height:1.6;margin-bottom:1rem">Ready to take the next step? Book your free consultation today.</p>
-          <a href="contact.html" class="btn btn-gold" style="display:block;text-align:center;padding:.65rem">Book Now &rarr;</a>
-        </div>
-        <div class="reveal" style="background:#f8f9fb;border-radius:16px;padding:1.5rem;border:1px solid #e8eef5">
-          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:#0d1a2e;margin-bottom:.85rem">Follow Us</h3>
-          <div style="display:flex;flex-direction:column;gap:.55rem">
-            <a href="https://www.instagram.com/peeleducation" target="_blank" style="color:#5a6a7a;text-decoration:none;font-size:.86rem;display:flex;gap:.5rem;align-items:center;padding:.5rem;background:#fff;border-radius:8px;border:1px solid #e8eef5"><span style="color:#c9922a;display:flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>Instagram &mdash; @peeleducation</a>
-            <a href="https://www.facebook.com/share/1JmbuxTaH8/" target="_blank" style="color:#5a6a7a;text-decoration:none;font-size:.86rem;display:flex;gap:.5rem;align-items:center;padding:.5rem;background:#fff;border-radius:8px;border:1px solid #e8eef5"><span style="color:#c9922a;display:flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>Facebook &mdash; Peel Education</a>
-            <a href="https://www.tiktok.com/@peeleducation" target="_blank" style="color:#5a6a7a;text-decoration:none;font-size:.86rem;display:flex;gap:.5rem;align-items:center;padding:.5rem;background:#fff;border-radius:8px;border:1px solid #e8eef5"><span style="color:#c9922a;display:flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span>TikTok &mdash; @peeleducation</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div style="display:flex;align-items:center;gap:9px">
-          <div style="background:#fff;border-radius:8px;padding:4px;display:flex;align-items:center;justify-content:center"><img src="data:image/png;base64,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" alt="Peel Education" style="height:38px;width:auto;"/></div>
-          <div style="line-height:1.2;display:inline-table">
-            <div style="font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:900;color:#fff;white-space:nowrap;letter-spacing:-.3px">Peel <span style="color:#e8b84b">Education</span></div>
-            <div style="font-size:.5rem;font-weight:700;color:#7a9dbc;text-transform:uppercase;margin-top:.08rem;letter-spacing:1.5px">C O N S U L T A N C Y &nbsp;&nbsp; G R O U P</div>
-          </div>
-        </div>
-        <p>Honest guidance for students who want real results. Serving students globally from Canada.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/peeleducation" target="_blank" class="fsoc" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-          <a href="https://www.facebook.com/share/1JmbuxTaH8/" target="_blank" class="fsoc" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-          <a href="https://www.tiktok.com/@peeleducation" target="_blank" class="fsoc" title="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
-          <a href="https://wa.me/14379924377" target="_blank" class="fsoc" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-        </div>
-      </div>
-      <div class="flinks"><h4>Pages</h4><ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="students.html">Students</a></li>
-        <li><a href="agent.html">Agent Registration</a></li>
-        
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul></div>
-      <div class="flinks"><h4>Services</h4><ul>
-        <li><a href="students.html">College Admissions</a></li>
-        <li><a href="students.html">PSW Program</a></li>
-        <li><a href="students.html">ECEA Program</a></li>
-        <li><a href="students.html">Pharmacy Assistant</a></li>
-        <li><a href="students.html">Short-Term Courses</a></li>
-        <li><a href="students.html">Career Counselling</a></li>
-      </ul></div>
-      <div class="flinks"><h4>Contact</h4><ul>
-        <li><a href="mailto:peeledu@yahoo.com">peeledu@yahoo.com</a></li>
-        <li><a href="tel:4379924377">437-992-4377</a></li>
-        <li><a href="https://wa.me/14379924377" target="_blank">WhatsApp Us</a></li>
-        <li><a href="contact.html">Book Free Consultation</a></li>
-        <li><a href="get-in-touch.html">Get In Touch</a></li>
-        <li style="color:#7a8fa8;font-size:.8rem">Mon&ndash;Fri 9am&ndash;5pm EST</li>
-      </ul></div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Peel Education. All rights reserved.</p>
-      <p>Serving Students Globally &#127758;</p>
-    </div>
-  </div>
-</footer>
-<!-- WHATSAPP + CHATBOT -->
+<div>
+<div class="reveal" style="background:#f8f9fb;border-radius:16px;padding:1.5rem;border:1px solid #e8eef5;margin-bottom:1.3rem"><h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:#0d1a2e;margin-bottom:.9rem">Categories</h3><div style="display:flex;flex-direction:column;gap:.45rem"><a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>Healthcare Careers</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">3</span></a><a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>Admissions Guide</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">2</span></a><a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>For Agents</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">2</span></a><a href="#" style="display:flex;justify-content:space-between;color:#5a6a7a;text-decoration:none;font-size:.87rem;padding:.55rem;border-radius:8px;background:#fff;border:1px solid #e8eef5"><span>Career Planning</span><span style="background:rgba(201,146,42,.1);color:#c9922a;padding:.1rem .48rem;border-radius:50px;font-size:.7rem;font-weight:700">4</span></a></div></div>
+<div class="reveal" style="background:linear-gradient(135deg,#1b3a6b,#0d2144);border-radius:16px;padding:1.5rem;margin-bottom:1.3rem"><h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:#fff;margin-bottom:.7rem">Free Consultation</h3><p style="color:#a8c0d8;font-size:.85rem;line-height:1.6;margin-bottom:1rem">Ready to take the next step? Book your free consultation today.</p><a href="contact.html" class="btn btn-gold" style="display:block;text-align:center;padding:.65rem">Book Now &rarr;</a></div>
+<div class="reveal" style="background:#f8f9fb;border-radius:16px;padding:1.5rem;border:1px solid #e8eef5"><h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:#0d1a2e;margin-bottom:.85rem">Follow Us</h3><div style="display:flex;flex-direction:column;gap:.55rem"><a href="https://www.instagram.com/peeleducation" target="_blank" style="color:#5a6a7a;text-decoration:none;font-size:.86rem;display:flex;gap:.5rem;align-items:center;padding:.5rem;background:#fff;border-radius:8px;border:1px solid #e8eef5"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram &mdash; @peeleducation</a><a href="https://www.facebook.com/share/1JmbuxTaH8/" target="_blank" style="color:#5a6a7a;text-decoration:none;font-size:.86rem;display:flex;gap:.5rem;align-items:center;padding:.5rem;background:#fff;border-radius:8px;border:1px solid #e8eef5"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook &mdash; Peel Education</a><a href="https://www.tiktok.com/@peeleducation" target="_blank" style="color:#5a6a7a;text-decoration:none;font-size:.86rem;display:flex;gap:.5rem;align-items:center;padding:.5rem;background:#fff;border-radius:8px;border:1px solid #e8eef5"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> TikTok &mdash; @peeleducation</a></div></div>
+</div></div></section>
+<footer><div class="footer-inner"><div class="footer-top"><div class="footer-brand"><div style="display:flex;align-items:center;gap:10px"><div style="background:#fff;border-radius:8px;padding:4px;display:flex;align-items:center;justify-content:center"><img src="data:image/png;base64,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" alt="Peel Education" style="height:38px;width:auto"/></div><div style="line-height:1.2;display:inline-table"><div style="font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:900;color:#fff;white-space:nowrap;letter-spacing:-.3px">Peel <span style="color:#e8b84b">Education</span></div><div style="font-size:.5rem;font-weight:700;color:#7a9dbc;text-transform:uppercase;margin-top:.08rem;width:100%;display:flex;justify-content:space-between;letter-spacing:1px"><span>C O N S U L T A N C Y</span><span>G R O U P</span></div></div></div><p>Honest guidance for students who want real results. Serving students globally from Canada.</p><div class="footer-social"><a href="https://www.instagram.com/peeleducation" target="_blank" class="fsoc" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.facebook.com/share/1JmbuxTaH8/" target="_blank" class="fsoc" title="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.tiktok.com/@peeleducation" target="_blank" class="fsoc" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://wa.me/14379924377" target="_blank" class="fsoc" title="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></div></div><div class="flinks"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="students.html">Students</a></li><li><a href="agent.html">Agent Registration</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="get-in-touch.html">Get In Touch</a></li></ul></div><div class="flinks"><h4>Services</h4><ul><li><a href="students.html">College Admissions</a></li><li><a href="students.html">PSW Program</a></li><li><a href="students.html">ECEA Program</a></li><li><a href="students.html">Pharmacy Assistant</a></li><li><a href="students.html">Short-Term Courses</a></li><li><a href="students.html">Career Counselling</a></li></ul></div><div class="flinks"><h4>Contact</h4><ul><li><a href="mailto:peeledu@yahoo.com">peeledu@yahoo.com</a></li><li><a href="tel:4379924377">437-992-4377</a></li><li><a href="https://wa.me/14379924377" target="_blank">WhatsApp Us</a></li><li><a href="contact.html">Book Free Consultation</a></li><li style="color:#7a8fa8;font-size:.8rem">Mon&ndash;Fri 9am&ndash;5pm EST</li></ul></div></div><div class="footer-bottom"><p>&copy; 2025 Peel Education Consultancy Group. All rights reserved.</p><p>Serving Students Globally &#127758;</p></div></div></footer>
+<!-- WA + CHAT -->
 <style>
-.cwq{background:#f0f4f8;border:1px solid #dde5ef;color:#1b3a6b;padding:.24rem .55rem;border-radius:50px;font-size:.68rem;font-weight:600;cursor:pointer;font-family:"DM Sans",sans-serif}
-.cwq:hover{background:#1b3a6b;color:#fff;border-color:#1b3a6b}
+.cwq{background:#f0f4f8;border:1px solid #dde5ef;color:var(--navy);padding:.24rem .55rem;border-radius:50px;font-size:.68rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
+.cwq:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
 #cwmsgs::-webkit-scrollbar{width:3px}
-#cwmsgs::-webkit-scrollbar-thumb{background:#c9922a;border-radius:2px}
-@media(max-width:460px){#cwwin{width:calc(100vw - 26px)!important}}
+#cwmsgs::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
 @keyframes wapulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.5}}
-@keyframes chatpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 </style>
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs." target="_blank" title="Chat on WhatsApp" style="position:fixed;bottom:88px;right:22px;z-index:9998;width:50px;height:50px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.55);text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.12)'" onmouseout="this.style.transform='scale(1)'">
-  <svg width="25" height="25" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-  <span style="position:absolute;top:-2px;right:-2px;width:11px;height:11px;background:#fff;border-radius:50%;border:2px solid #25D366;animation:wapulse 1.8s infinite"></span>
-</a>
-
-<!-- Chat Now Button -->
+<a href="https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs." target="_blank" title="Chat on WhatsApp" style="position:fixed;bottom:88px;right:22px;z-index:9998;width:50px;height:50px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.55);text-decoration:none;transition:transform .2s" onmouseover="this.style.transform='scale(1.12)'" onmouseout="this.style.transform='scale(1)'"><svg width="25" height="25" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span style="position:absolute;top:-2px;right:-2px;width:11px;height:11px;background:#fff;border-radius:50%;border:2px solid #25D366;animation:wapulse 1.8s infinite"></span></a>
 <div id="cw" style="position:fixed;bottom:22px;right:22px;z-index:9999;font-family:'DM Sans',sans-serif">
-
-  <!-- Chat Window -->
   <div id="cwwin" style="display:none;width:312px;background:#fff;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.2);overflow:hidden;flex-direction:column;border:1px solid #e8eef5;margin-bottom:10px">
-
-    <!-- Header -->
     <div style="background:linear-gradient(135deg,#1b3a6b,#0d2144);padding:.9rem 1.1rem;display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:.6rem">
         <div style="width:34px;height:34px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.58rem;color:#fff;font-weight:800;flex-shrink:0">PE</div>
-        <div>
-          <div style="color:#fff;font-weight:700;font-size:.88rem">Peel Education</div>
-          <div style="color:#a8c0d8;font-size:.68rem;display:flex;align-items:center;gap:.3rem"><span style="width:6px;height:6px;background:#4caf50;border-radius:50%;display:inline-block"></span>Online now</div>
-        </div>
+        <div><div style="color:#fff;font-weight:700;font-size:.88rem">Peel Education</div><div style="color:#a8c0d8;font-size:.68rem;display:flex;align-items:center;gap:.3rem"><span style="width:6px;height:6px;background:#4caf50;border-radius:50%;display:inline-block"></span>Online now</div></div>
       </div>
       <button onclick="cwClose()" style="background:rgba(255,255,255,.15);border:none;color:#fff;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:1rem;font-weight:700;line-height:1">&times;</button>
     </div>
-
-    <!-- Messages -->
     <div id="cwmsgs" style="height:270px;overflow-y:auto;padding:.9rem;display:flex;flex-direction:column;gap:.7rem;background:#f8f9fb"></div>
-
-    <!-- Quick Buttons -->
     <div style="padding:.5rem .8rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;flex-wrap:wrap;gap:.3rem">
       <button class="cwq" onclick="cwQ('programs')">Programs</button>
       <button class="cwq" onclick="cwQ('psw')">PSW</button>
@@ -405,200 +163,57 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
       <button class="cwq" onclick="cwQ('agent')">Agent Partner</button>
       <button class="cwq" onclick="cwQ('consult')">Free Consult</button>
     </div>
-
-    <!-- Input -->
     <div style="padding:.65rem .85rem;background:#fff;border-top:1px solid #f0f2f5;display:flex;gap:.45rem;align-items:center">
       <input id="cwin" type="text" placeholder="Type your question..." style="flex:1;border:1.5px solid #e0e8f0;border-radius:50px;padding:.5rem .9rem;font-size:.82rem;outline:none;font-family:'DM Sans',sans-serif;color:#0d1a2e;background:#f8f9fb"/>
       <button onclick="cwSend()" style="background:#c9922a;color:#fff;border:none;border-radius:50%;width:33px;height:33px;cursor:pointer;font-size:.95rem;flex-shrink:0;display:flex;align-items:center;justify-content:center">&#10148;</button>
     </div>
   </div>
-
-  <!-- Toggle Button -->
-  <button onclick="cwOpen()" id="cwbtn" style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#1b3a6b,#0d2144);border:3px solid #c9922a;color:#fff;cursor:pointer;box-shadow:0 6px 22px rgba(27,58,107,.4);display:flex;align-items:center;justify-content:center;margin-left:auto;position:relative;flex-direction:column;gap:1px">
+  <button onclick="cwOpen()" style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#1b3a6b,#0d2144);border:3px solid #c9922a;color:#fff;cursor:pointer;box-shadow:0 6px 22px rgba(27,58,107,.4);display:flex;align-items:center;justify-content:center;margin-left:auto;position:relative;flex-direction:column;gap:1px">
     <span style="font-size:.55rem;font-weight:800;letter-spacing:-.2px;line-height:1.1;text-align:center">CHAT<br>NOW</span>
     <span id="cwdot" style="display:none;position:absolute;top:-3px;right:-3px;width:13px;height:13px;background:#e8b84b;border-radius:50%;border:2px solid #fff"></span>
   </button>
 </div>
-
 <script>
 (function(){
-
-var KB = {
-  welcome: "Hi! Welcome to Peel Education. I can help with PSW, ECEA, Pharmacy Assistant, College Admissions and Career Guidance in Canada. What would you like to know?",
-  programs: "We offer:\n\n&#9679; College Admissions\n&#9679; PSW Program\n&#9679; ECEA Program\n&#9679; Pharmacy Assistant\n&#9679; Short-Term Courses\n&#9679; Career Counselling\n\nWhich one interests you?",
-  psw: "<b>PSW - Personal Support Worker</b>\n\n&#9679; Most in-demand healthcare career\n&#9679; Duration: 6-12 months\n&#9679; Pay: $19-$35/hr\n&#9679; Hospitals & care homes\n\nWould you like to know more?",
-  ecea: "<b>ECEA - Early Childhood Educator Assistant</b>\n\n&#9679; Daycares & schools\n&#9679; Duration: 8-12 months\n&#9679; Pay: $19-$35/hr\n\nWould you like to register?",
-  pharmacy: "<b>Pharmacy Assistant</b>\n\n&#9679; Pharmacies & hospitals\n&#9679; Duration: 4-8 months\n&#9679; Pay: $19-$35/hr\n\nWould you like to know more?",
-  cost: "Our consultation is FREE with no obligation.\n\nProgram costs vary by college. We give you exact costs during your free consultation.",
-  eligibility: "Eligibility varies by program. We assess YOUR eligibility first - honest recommendations only.\n\nBook a free consultation to find out!",
-  consult: "<b>Free Consultation - No obligation!</b>\n\n&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>\n&#9679; WhatsApp: <a href='https://wa.me/14379924377' target='_blank' style='color:#25D366'>Message Us</a>\n&#9679; Email: peeledu@yahoo.com",
-  agent: "<b>Agent Partners</b>\n\nJoin our network to place students in top Canadian colleges.\n\n&#9679; Competitive commissions\n&#9679; 20+ partner colleges\n&#9679; Fast processing",
-  fallback: "For the best answer please contact us:\n\n&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'><b>437-992-4377</b></a>\n&#9679; WhatsApp: <a href='https://wa.me/14379924377' target='_blank' style='color:#25D366'><b>Chat Now</b></a>\n&#9679; Email: peeledu@yahoo.com"
+var KB={
+  welcome:"Hi! Welcome to Peel Education Consultancy Group.<br><br>I can help with PSW, ECEA, Pharmacy Assistant, College Admissions and Career Guidance in Canada. What would you like to know?",
+  programs:"We offer:<br><br>&#9679; College Admissions<br>&#9679; PSW Program<br>&#9679; ECEA Program<br>&#9679; Pharmacy Assistant<br>&#9679; Short-Term Courses<br>&#9679; Career Counselling<br><br>Which one interests you?",
+  psw:"<b>PSW - Personal Support Worker</b><br><br>&#9679; Most in-demand healthcare career<br>&#9679; Duration: 6-12 months<br>&#9679; Pay: $19-$35/hr<br>&#9679; Hospitals & care homes<br><br>Would you like to register?",
+  ecea:"<b>ECEA - Early Childhood Educator Assistant</b><br><br>&#9679; Daycares & schools<br>&#9679; Duration: 8-12 months<br>&#9679; Pay: $19-$35/hr<br><br>Would you like to register?",
+  pharmacy:"<b>Pharmacy Assistant</b><br><br>&#9679; Pharmacies & hospitals<br>&#9679; Duration: 4-8 months<br>&#9679; Pay: $19-$35/hr<br><br>Would you like to know more?",
+  cost:"Our consultation is <b>FREE</b> with no obligation.<br><br>Program costs vary by college. We give you exact costs during your free consultation.",
+  eligibility:"Eligibility varies by program. We assess YOUR eligibility first - honest recommendations only.<br><br>Book a free consultation to find out!",
+  consult:"<b>Free Consultation - No obligation!</b><br><br>&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a><br>&#9679; WhatsApp: <a href='https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs.' target='_blank' style='color:#25D366'>Message Us</a><br>&#9679; Email: peeledu@yahoo.com",
+  agent:"<b>Agent Partners</b><br><br>Join our network to place students in top Canadian colleges.<br><br>&#9679; Competitive commissions<br>&#9679; 20+ partner colleges<br>&#9679; Fast processing<br><br>Visit our Agent Registration page!",
+  fallback:"For the best answer please contact us:<br><br>&#9679; Call: <a href='tel:4379924377' style='color:#c9922a'><b>437-992-4377</b></a><br>&#9679; WhatsApp: <a href='https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs.' target='_blank' style='color:#25D366'><b>Chat Now</b></a><br>&#9679; Email: peeledu@yahoo.com"
 };
-
-var msgCount = 0;
-var leadSent = false;
-var awaitingNumber = false;
-
-function bot(html) {
-  var b = document.getElementById('cwmsgs');
-  var d = document.createElement('div');
-  d.style.cssText = 'display:flex;gap:.4rem;align-items:flex-start';
-  d.innerHTML = '<div style="width:24px;height:24px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.55rem;color:#fff;font-weight:800;flex-shrink:0">PE</div>'
-    + '<div style="background:#fff;border:1px solid #e8eef5;border-radius:12px;border-bottom-left-radius:3px;padding:.65rem .85rem;font-size:.82rem;color:#0d1a2e;line-height:1.6;max-width:88%">' + html.replace(/\n/g,'<br>') + '</div>';
-  b.appendChild(d);
-  b.scrollTop = b.scrollHeight;
-}
-
-function usr(txt) {
-  var b = document.getElementById('cwmsgs');
-  var d = document.createElement('div');
-  d.style.cssText = 'display:flex;justify-content:flex-end';
-  d.innerHTML = '<div style="background:#1b3a6b;color:#fff;border-radius:12px;border-bottom-right-radius:3px;padding:.65rem .85rem;font-size:.82rem;line-height:1.6;max-width:88%">' + txt + '</div>';
-  b.appendChild(d);
-  b.scrollTop = b.scrollHeight;
-}
-
-function addWAButton() {
-  var b = document.getElementById('cwmsgs');
-  var d = document.createElement('div');
-  d.style.cssText = 'display:flex;justify-content:center;padding:.3rem 0';
-  d.innerHTML = '<a href="https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs." target="_blank" style="background:#25D366;color:#fff;border-radius:50px;padding:.55rem 1.1rem;font-size:.8rem;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:.4rem"><svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp Us Now</a>';
-  b.appendChild(d);
-  b.scrollTop = b.scrollHeight;
-}
-
-function askForNumber() {
-  if (leadSent) return;
-  setTimeout(function() {
-    bot('Want a faster reply? Share your WhatsApp number and we will contact you directly!<br><br>Just type your number below');
-    awaitingNumber = true;
-  }, 800);
-}
-
-function sendLead(phone) {
-  var fd = new FormData();
-  fd.append('_subject', 'New Chatbot Lead - Peel Education');
-  fd.append('Lead Source', 'Website Chatbot');
-  fd.append('WhatsApp Number', phone);
-  fd.append('Page URL', window.location.href);
-  fd.append('Time', new Date().toLocaleString());
-  fetch('https://formspree.io/f/xnjgokgl', {
-    method: 'POST',
-    body: fd,
-    headers: { 'Accept': 'application/json' }
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(d) {
-    leadSent = true;
-    awaitingNumber = false;
-    bot('We got your number! We will WhatsApp you at <b>' + phone + '</b> shortly.<br><br>You can also reach us:<br>&#9679; <a href="tel:4379924377" style="color:#c9922a">437-992-4377</a><br>&#9679; <a href="mailto:peeledu@yahoo.com" style="color:#c9922a">peeledu@yahoo.com</a>');
-    addWAButton();
-  })
-  .catch(function() {
-    leadSent = true;
-    awaitingNumber = false;
-    bot('Thank you! We will contact you soon.<br><br>Or WhatsApp us directly:');
-    addWAButton();
-  });
-}
-
-function isPhone(t) {
-  return /^[\d\s\+\-\(\)]{7,15}$/.test(t.trim());
-}
-
-function smart(t) {
-  var l = t.toLowerCase();
-  if (l.match(/hi|hello|hey/)) return KB.welcome;
-  if (l.match(/program|service|offer/)) return KB.programs;
-  if (l.match(/psw|personal support/)) return KB.psw;
-  if (l.match(/ecea|early child/)) return KB.ecea;
-  if (l.match(/pharm/)) return KB.pharmacy;
-  if (l.match(/cost|fee|price|money/)) return KB.cost;
-  if (l.match(/elig|qualify/)) return KB.eligibility;
-  if (l.match(/consult|book|free|start/)) return KB.consult;
-  if (l.match(/agent|partner|b2b/)) return KB.agent;
-  if (l.match(/contact|call|email|phone/)) return KB.consult;
-  if (l.match(/short|certificate|diploma/)) return "Short-Term Courses\n\n&#9679; 4-12 months\n&#9679; Career-ready fast\n&#9679; Pay: $19-$35/hr\n\nContact us to find the right course!";
-  if (l.match(/career|counsel/)) return "Career Counselling\n\n&#9679; One-on-one sessions\n&#9679; Personalized roadmap\n\nCall <a href='tel:4379924377' style='color:#c9922a'>437-992-4377</a>!";
-  if (l.match(/college|admission/)) return "College Admissions\n\n&#9679; Top public colleges Canada\n&#9679; Full application support\n\nRegister on our Students page!";
-  if (l.match(/thank/)) return "You're welcome! Feel free to ask anything else or WhatsApp us: <a href='https://wa.me/14379924377' target='_blank' style='color:#25D366'>437-992-4377</a>";
-  return KB.fallback;
-}
-
-window.cwOpen = function() {
-  var win = document.getElementById('cwwin');
-  win.style.display = 'flex';
-  win.style.flexDirection = 'column';
-  document.getElementById('cwdot').style.display = 'none';
-  if (!document.getElementById('cwmsgs').children.length) {
-    setTimeout(function() { bot(KB.welcome); msgCount++; }, 300);
-  }
-  setTimeout(function() { document.getElementById('cwin').focus(); }, 350);
-};
-
-window.cwClose = function() {
-  document.getElementById('cwwin').style.display = 'none';
-};
-
-window.cwQ = function(k) {
-  var labels = {
-    programs: 'What programs do you offer?',
-    psw: 'Tell me about PSW',
-    ecea: 'Tell me about ECEA',
-    pharmacy: 'Tell me about Pharmacy Assistant',
-    cost: 'What are the fees?',
-    eligibility: 'What are eligibility requirements?',
-    agent: 'I am an agent partner',
-    consult: 'How to book free consultation?'
-  };
-  usr(labels[k] || k);
-  msgCount++;
-  setTimeout(function() {
-    bot(KB[k] || KB.fallback);
-    msgCount++;
-    if (msgCount >= 4 && !leadSent) askForNumber();
-  }, 450);
-};
-
-window.cwSend = function() {
-  var inp = document.getElementById('cwin');
-  var btn = document.querySelector('#cw button[onclick="cwSend()"]');
-  var t = inp.value.trim();
-  if (!t) return;
-  inp.value = '';
-  usr(t);
-  msgCount++;
-
-  if (awaitingNumber) {
-    if (isPhone(t)) {
-      bot('Perfect! Getting your details...');
-      sendLead(t);
-    } else {
-      bot('Please enter your WhatsApp number so we can contact you directly (e.g. 4379921234)');
-    }
-    return;
-  }
-
-  setTimeout(function() {
-    bot(smart(t));
-    msgCount++;
-    if (msgCount >= 4 && !leadSent) askForNumber();
-  }, 450);
-};
-
-document.getElementById('cwin').addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') cwSend();
-});
-
-// Show notification dot after 5 seconds
-setTimeout(function() {
-  if (document.getElementById('cwwin').style.display === 'none') {
-    document.getElementById('cwdot').style.display = 'block';
-  }
-}, 5000);
-
+var msgCount=0,leadSent=false,awaitingNum=false;
+function bot(h){var b=document.getElementById('cwmsgs'),d=document.createElement('div');d.style.cssText='display:flex;gap:.4rem;align-items:flex-start';d.innerHTML='<div style="width:24px;height:24px;border-radius:50%;background:#c9922a;display:flex;align-items:center;justify-content:center;font-size:.55rem;color:#fff;font-weight:800;flex-shrink:0">PE</div><div style="background:#fff;border:1px solid #e8eef5;border-radius:12px;border-bottom-left-radius:3px;padding:.65rem .85rem;font-size:.82rem;color:#0d1a2e;line-height:1.6;max-width:88%">'+h+'</div>';b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function usr(t){var b=document.getElementById('cwmsgs'),d=document.createElement('div');d.style.cssText='display:flex;justify-content:flex-end';d.innerHTML='<div style="background:#1b3a6b;color:#fff;border-radius:12px;border-bottom-right-radius:3px;padding:.65rem .85rem;font-size:.82rem;line-height:1.6;max-width:88%">'+t+'</div>';b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function addWABtn(){var b=document.getElementById('cwmsgs'),d=document.createElement('div');d.style.cssText='display:flex;justify-content:center;padding:.3rem 0';d.innerHTML='<a href="https://wa.me/14379924377?text=Hi%20Peel%20Education!%20I%20am%20interested%20in%20your%20programs." target="_blank" style="background:#25D366;color:#fff;border-radius:50px;padding:.5rem 1rem;font-size:.8rem;font-weight:700;text-decoration:none">WhatsApp Us Now</a>';b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function askNum(){if(leadSent)return;setTimeout(function(){bot('Want a faster reply? Share your WhatsApp number and we will contact you directly!<br><br>Just type your number below');awaitingNum=true;},800);}
+function sendLead(p){var fd=new FormData();fd.append('_subject','Chatbot Lead - Peel Education');fd.append('Lead Source','Website Chatbot');fd.append('WhatsApp',p);fd.append('Page',window.location.href);fd.append('Time',new Date().toLocaleString());fetch('https://formspree.io/f/xnjgokgl',{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(){leadSent=true;awaitingNum=false;bot('We got your number! We will WhatsApp you at <b>'+p+'</b> shortly.<br><br>&#9679; <a href="tel:4379924377" style="color:#c9922a">437-992-4377</a><br>&#9679; <a href="mailto:peeledu@yahoo.com" style="color:#c9922a">peeledu@yahoo.com</a>');addWABtn();}).catch(function(){leadSent=true;awaitingNum=false;bot('Thank you! We will contact you soon.');addWABtn();});}
+function isPhone(t){return /^[\d\s+\-()\[\]]{7,15}$/.test(t.trim());}
+function smart(t){t=t.toLowerCase();if(t.match(/hi|hello|hey/))return KB.welcome;if(t.match(/program|service|offer/))return KB.programs;if(t.match(/psw|personal support/))return KB.psw;if(t.match(/ecea|early child/))return KB.ecea;if(t.match(/pharm/))return KB.pharmacy;if(t.match(/cost|fee|price|money/))return KB.cost;if(t.match(/elig|qualify/))return KB.eligibility;if(t.match(/consult|book|free|start/))return KB.consult;if(t.match(/agent|partner/))return KB.agent;if(t.match(/contact|call|email|phone/))return KB.consult;if(t.match(/thank/))return"You're welcome! Feel free to ask anything else.";return KB.fallback;}
+window.cwOpen=function(){var w=document.getElementById('cwwin');w.style.display='flex';w.style.flexDirection='column';document.getElementById('cwdot').style.display='none';if(!document.getElementById('cwmsgs').children.length)setTimeout(function(){bot(KB.welcome);msgCount++;},300);setTimeout(function(){document.getElementById('cwin').focus();},350);};
+window.cwClose=function(){document.getElementById('cwwin').style.display='none';};
+window.cwQ=function(k){var L={programs:'What programs do you offer?',psw:'Tell me about PSW',ecea:'Tell me about ECEA',pharmacy:'Tell me about Pharmacy Assistant',cost:'What are the fees?',eligibility:'Eligibility requirements?',agent:'I am an agent partner',consult:'How to book free consultation?'};usr(L[k]||k);msgCount++;setTimeout(function(){bot(KB[k]||KB.fallback);msgCount++;if(msgCount>=4&&!leadSent)askNum();},450);};
+window.cwSend=function(){var i=document.getElementById('cwin'),t=i.value.trim();if(!t)return;i.value='';usr(t);msgCount++;if(awaitingNum){if(isPhone(t)){bot('Getting your details...');sendLead(t);}else{bot('Please enter your WhatsApp number (e.g. 4379921234)');};return;}setTimeout(function(){bot(smart(t));msgCount++;if(msgCount>=4&&!leadSent)askNum();},450);};
+document.getElementById('cwin').addEventListener('keydown',function(e){if(e.key==='Enter')cwSend();});
+setTimeout(function(){if(document.getElementById('cwwin').style.display==='none')document.getElementById('cwdot').style.display='block';},5000);
 })();
+</script>
+<script>
+var rv=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){var ob=new IntersectionObserver(function(e){e.forEach(function(x,i){if(x.isIntersecting){setTimeout(function(){x.target.classList.add('visible');},i*60);ob.unobserve(x.target);}});},{threshold:0.07});rv.forEach(function(el){ob.observe(el);});}else{rv.forEach(function(el){el.classList.add('visible');});}
+function toggleMenu(){var nl=document.querySelector('.nav-links'),cta=document.querySelector('.nav-cta');if(nl.style.display==='flex'){nl.style.display='none';if(cta)cta.style.display='none';}else{nl.style.cssText='display:flex;flex-direction:column;position:absolute;top:65px;left:0;right:0;background:#fff;padding:1.2rem 5%;gap:.9rem;border-bottom:2px solid #c9922a;z-index:99';if(cta){cta.style.display='inline-block';cta.style.marginTop='.3rem';}}}
+document.querySelectorAll('.nav-links a').forEach(function(a){var h=a.getAttribute('href');if(h&&(window.location.pathname.endsWith(h)||window.location.href.indexOf(h.replace('.html',''))>-1))a.classList.add('active');if(h==='index.html'&&(window.location.pathname==='/'||window.location.pathname.endsWith('/')))a.classList.add('active');});
+document.querySelectorAll('form[id]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var btn=f.querySelector('.sbtn'),msg=f.querySelector('.fmsg');btn.textContent='Sending...';btn.disabled=true;if(msg)msg.style.display='none';fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json();}).then(function(d){if(msg){msg.style.display='block';if(d.ok){msg.className='fmsg ok';msg.textContent='Submitted! We will contact you within 24 hours.';f.reset();}else{msg.className='fmsg err';msg.textContent='Something went wrong. Please email peeledu@yahoo.com.';}}btn.textContent='Submit';btn.disabled=false;}).catch(function(){if(msg){msg.style.display='block';msg.className='fmsg err';msg.textContent='Connection error. Please call 437-992-4377.';}btn.textContent='Submit';btn.disabled=false;});});});
+// Counter animation
+(function(){var counted=false;function ease(t){return 1-Math.pow(1-t,4);}function animate(el){var target=parseInt(el.getAttribute('data-target')),suffix=el.getAttribute('data-suffix')||'',dur=target>=1000?2200:1600,start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1),cur=Math.floor(ease(p)*target);el.textContent=cur>=1000?cur.toLocaleString()+suffix:cur+suffix;if(p<1)requestAnimationFrame(step);else el.textContent=target>=1000?target.toLocaleString()+suffix:target+suffix;}requestAnimationFrame(step);}
+function run(){if(counted)return;counted=true;document.querySelectorAll('.count-num').forEach(function(el,i){setTimeout(function(){animate(el);},i*180);});}
+var sb=document.querySelector('.stats-bar');if(sb){'IntersectionObserver' in window?new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){run();}});},{threshold:0.3}).observe(sb):setTimeout(run,1000);}
+window.addEventListener('load',function(){if(sb){var r=sb.getBoundingClientRect();if(r.top<window.innerHeight)setTimeout(run,500);}});})();
 </script>
 </body>
 </html>
