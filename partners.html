@@ -184,6 +184,15 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
   .hero h1{font-size:2.2rem}
   .frow{grid-template-columns:1fr}
 }
+
+.clogo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;margin-top:2rem}
+.clogo-box{border-radius:12px;overflow:hidden;border:1px solid #e8eef5;transition:all .25s;background:#fff}
+.clogo-box:hover{border-color:rgba(201,146,42,.35);box-shadow:0 4px 16px rgba(27,58,107,.1);transform:translateY(-2px)}
+.clogo-inner{height:80px;display:flex;align-items:center;justify-content:center;padding:.7rem}
+.clogo-inner img{max-width:100%;max-height:100%;object-fit:contain}
+.clogo-fallback{width:100%;height:100%;border-radius:8px;align-items:center;justify-content:center;padding:.5rem;text-align:center}
+.clogo-fallback span{color:#fff;font-size:.7rem;font-weight:700;line-height:1.3;text-align:center}
+
 </style>
 </head>
 <body>
@@ -218,6 +227,7 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
     <li><a href="partners.html">Partner Schools</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="get-in-touch.html">Get In Touch</a></li>
   </ul>
   <a href="contact.html" class="nav-cta">Free Consultation</a>
   <div class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
@@ -239,28 +249,124 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
       <h2 class="stitle">Top Canadian Colleges &amp; Institutions</h2>
       <p class="ssub">Our partner colleges are among the best public institutions in Canada, offering a wide range of programs for domestic and international students.</p>
     </div>
-    <div class="partners-scroll reveal" style="gap:1.5rem">
-      <div class="partner-logo">Humber College</div>
-      <div class="partner-logo">Sheridan College</div>
-      <div class="partner-logo">Centennial College</div>
-      <div class="partner-logo">George Brown College</div>
-      <div class="partner-logo">Seneca College</div>
-      <div class="partner-logo">Algonquin College</div>
-      <div class="partner-logo">Fanshawe College</div>
-      <div class="partner-logo">Durham College</div>
-      <div class="partner-logo">Fleming College</div>
-      <div class="partner-logo">Conestoga College</div>
-      <div class="partner-logo">Niagara College</div>
-      <div class="partner-logo">St. Lawrence College</div>
-      <div class="partner-logo">Cambrian College</div>
-      <div class="partner-logo">Mohawk College</div>
-      <div class="partner-logo">Georgian College</div>
-      <div class="partner-logo">Loyalist College</div>
-      <div class="partner-logo">Northern College</div>
-      <div class="partner-logo">Sault College</div>
-      <div class="partner-logo">St. Clair College</div>
-      <div class="partner-logo">Confederation College</div>
-    </div>
+    <div class="clogo-grid">
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Humber_College_logo.svg/250px-Humber_College_logo.svg.png" alt="Humber College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#1b3a6b;display:none"><span>Humber College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Sheridan_College_logo.svg/250px-Sheridan_College_logo.svg.png" alt="Sheridan College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#0d4a7a;display:none"><span>Sheridan College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Centennial_College_Logo.svg/250px-Centennial_College_Logo.svg.png" alt="Centennial College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#1a5276;display:none"><span>Centennial College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/George_Brown_College_logo.svg/250px-George_Brown_College_logo.svg.png" alt="George Brown College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#154360;display:none"><span>George Brown College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Seneca_Polytechnic_logo.svg/250px-Seneca_Polytechnic_logo.svg.png" alt="Seneca College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#1f618d;display:none"><span>Seneca College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Algonquin_College_logo.svg/250px-Algonquin_College_logo.svg.png" alt="Algonquin College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#117a65;display:none"><span>Algonquin College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Fanshawe_College_logo.svg/250px-Fanshawe_College_logo.svg.png" alt="Fanshawe College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#1e8449;display:none"><span>Fanshawe College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Durham_College_logo.svg/250px-Durham_College_logo.svg.png" alt="Durham College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#784212;display:none"><span>Durham College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Fleming_College_logo.svg/250px-Fleming_College_logo.svg.png" alt="Fleming College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#6e2f1a;display:none"><span>Fleming College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Conestoga_college_logo.svg/250px-Conestoga_college_logo.svg.png" alt="Conestoga College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#4a235a;display:none"><span>Conestoga College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/38/Niagara_College_logo.svg/250px-Niagara_College_logo.svg.png" alt="Niagara College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#1a237e;display:none"><span>Niagara College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Mohawk_College_logo.svg/250px-Mohawk_College_logo.svg.png" alt="Mohawk College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#0d47a1;display:none"><span>Mohawk College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Georgian_College_logo.svg/250px-Georgian_College_logo.svg.png" alt="Georgian College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#006064;display:none"><span>Georgian College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/St._Lawrence_College_logo.svg/250px-St._Lawrence_College_logo.svg.png" alt="St. Lawrence College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#1b5e20;display:none"><span>St. Lawrence College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Cambrian_College_logo.svg/250px-Cambrian_College_logo.svg.png" alt="Cambrian College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#4e342e;display:none"><span>Cambrian College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Loyalist_College_logo.svg/250px-Loyalist_College_logo.svg.png" alt="Loyalist College" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+            <div class="clogo-fallback" style="background:#37474f;display:none"><span>Loyalist College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <div class="clogo-fallback" style="background:#b71c1c;display:flex"><span>St. Clair College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <div class="clogo-fallback" style="background:#1a237e;display:flex"><span>Confederation College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <div class="clogo-fallback" style="background:#1b5e20;display:flex"><span>Northern College</span></div>
+          </div>
+        </div>
+<div class="clogo-box">
+          <div class="clogo-inner">
+            <div class="clogo-fallback" style="background:#4a148c;display:flex"><span>Sault College</span></div>
+          </div>
+        </div>
+</div></div>
   </div>
 </section>
 
@@ -324,6 +430,7 @@ footer{background:var(--dark);border-top:1px solid rgba(201,146,42,.14);padding:
         <li><a href="tel:4379924377">437-992-4377</a></li>
         <li><a href="https://wa.me/14379924377" target="_blank">WhatsApp Us</a></li>
         <li><a href="contact.html">Book Free Consultation</a></li>
+        <li><a href="get-in-touch.html">Get In Touch</a></li>
         <li style="color:#7a8fa8;font-size:.8rem">Mon&ndash;Fri 9am&ndash;5pm EST</li>
       </ul></div>
     </div>
